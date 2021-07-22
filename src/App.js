@@ -18,21 +18,6 @@ class App extends Component {
         <Work />
         <Footer />
       </div>
-
-      /*
-      <div className="App">
-        <NavbarMenu/>
-        <div className="mobile">
-          <Home/>
-          <Services/>
-          <About/>
-          <ContactUs/>
-        </div>
-        <div className="desktop">
-          { routes }
-        </div>
-        <Footer/>
-      </div>*/
     );
   }
 }
