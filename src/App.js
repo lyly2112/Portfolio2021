@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Home from "./components/Home";
 import About from "./components/About"
-import Work from "./components/Work"
+import Portfolio from "./components/Portfolio"
 import Footer from "./components/Footer"
 
 
-import './App.scss';
+
 
 //import routes from './routes';
 
@@ -15,7 +15,7 @@ class App extends Component {
       <div className="App">
         <Home />
         <About />
-        <Work />
+        <Portfolio />
         <Footer />
       </div>
     );

@@ -1,0 +1,12 @@
+.home {
+  display: flex;
+  background-color: #C4C4C4;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home__header {
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */
