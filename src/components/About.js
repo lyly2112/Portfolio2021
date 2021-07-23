@@ -6,7 +6,9 @@ import react from "../images/tools/react.svg";
 function About() {
   return (
     <div className="about">
-      <div className="about__text">
+      {/* <div className="about__empty-container"></div> */}
+      <div className="about__content">
+        <div className="about__text">
         <div className="about__header">Hello there!</div>
         <div className="about__bio">
           I think of myself as an artist within the head of a mathematician. Or
@@ -22,7 +24,8 @@ function About() {
         </div>
       </div>
       <div className="about__tools">
-        <div className="about__header">Skills</div>
+        <div className="about__tools-header">Skills</div>
+        <div className="about__tools-icons">
         <div className="about__tools__icon">
           <img className="about__tools__icon__logo" src={react} alt="React" />
           <div className="about__tools__icon__name">React</div>
@@ -35,7 +38,10 @@ function About() {
           <img className="about__tools__icon__logo" src={java} alt="Java" />
           <div className="about__tools__icon__name">Java</div>
         </div>
+        </div>
       </div>
+      </div>
+      
     </div>
   );
 }
