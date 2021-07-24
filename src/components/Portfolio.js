@@ -20,7 +20,7 @@ function Portfolio() {
               className="portfolio__project-image"
               src={dianawebb}
               alt="dianawebb.us"
-            ></img>
+            />
           </ExternalLink>
           <div className="portfolio__project-header">Diana Webb</div>
           <div className="portfolio__project-tools">
