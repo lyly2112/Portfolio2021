@@ -80,6 +80,8 @@ body {
 .portfolio__project {
   display: flex;
   flex-direction: column;
+  width: 25%;
+  height: 15rem;
 }
 .portfolio__project-image {
   width: 100%;
@@ -90,5 +92,11 @@ body {
 .portfolio__project-tools {
   display: flex;
   flex-direction: row;
+}
+.portfolio__project-tool {
+  background-color: #343A40;
+  color: white;
+  border-radius: 160px;
+  padding: 0 0.5rem;
 }
 /*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */

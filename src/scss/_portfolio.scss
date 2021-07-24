@@ -20,19 +20,27 @@
   &__project {
     display: flex;
     flex-direction: column;
+    width: 25%;
+    height: 15rem;
   }
 
   &__project-image {
-      width: 100%;
+    width: 100%;
   }
 
   &__project-header {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   &__project-tools {
-      display: flex;
-      flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
+  &__project-tool {
+    background-color: #343A40;
+    color: white;
+    border-radius: 160px;
+    padding: 0 0.5rem;
+  }
 }

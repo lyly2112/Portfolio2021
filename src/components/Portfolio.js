@@ -1,4 +1,6 @@
 import React from "react";
+import { ExternalLink } from "react-external-link";
+import dianawebb from "../images/portfolio/dianawebb.JPG";
 
 function Portfolio() {
   return (
@@ -13,7 +15,13 @@ function Portfolio() {
       </div>
       <div className="portfolio__projects">
         <div className="portfolio__project">
-          <div className="portfolio__project-image"></div>
+          <ExternalLink href="https://github.com/MajesticBay/diana-webb">
+            <img
+              className="portfolio__project-image"
+              src={dianawebb}
+              alt="dianawebb.us"
+            ></img>
+          </ExternalLink>
           <div className="portfolio__project-header">Diana Webb</div>
           <div className="portfolio__project-tools">
             <div className="portfolio__project-tool">React</div>
