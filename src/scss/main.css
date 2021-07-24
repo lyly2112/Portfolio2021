@@ -60,4 +60,35 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__header {
+  font-size: 2.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+.portfolio__description {
+  text-align: center;
+}
+.portfolio__projects {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio__project {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__project-image {
+  width: 100%;
+}
+.portfolio__project-header {
+  font-size: 2rem;
+}
+.portfolio__project-tools {
+  display: flex;
+  flex-direction: row;
+}
 /*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */

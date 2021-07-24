@@ -12,38 +12,12 @@ function Portfolio() {
         creativity involved.
       </div>
       <div className="portfolio__projects">
-        <div className="portfolio__projects__project">
-          <div className="portfolio__projects__project__img"></div>
-          <div className="portfolio__projects__project__header">Diana Webb</div>
-          <div className="portfolio__projects__project">specs</div>
-        </div>
-        <div className="portfolio__projects__project">
-          <div className="portfolio__projects__project__img"></div>
-          <div className="portfolio__projects__project__header">
-            Sergei Nikiforov
+        <div className="portfolio__project">
+          <div className="portfolio__project-image"></div>
+          <div className="portfolio__project-header">Diana Webb</div>
+          <div className="portfolio__project-tools">
+            <div className="portfolio__project-tool">React</div>
           </div>
-          <div className="portfolio__projects__project">specs</div>
-        </div>
-        <div className="portfolio__projects__project">
-          <div className="portfolio__projects__project__img"></div>
-          <div className="portfolio__projects__project__header">
-            Liliya Sherstobitova
-          </div>
-          <div className="portfolio__projects__project">specs</div>
-        </div>
-        <div className="portfolio__projects__project">
-          <div className="portfolio__projects__project__img"></div>
-          <div className="portfolio__projects__project__header">
-            Majestic Bay
-          </div>
-          <div className="portfolio__projects__project">specs</div>
-        </div>
-        <div className="portfolio__projects__project">
-          <div className="portfolio__projects__project__img"></div>
-          <div className="portfolio__projects__project__header">
-            Personal website (old version)
-          </div>
-          <div className="portfolio__projects__project">specs</div>
         </div>
       </div>
     </div>

@@ -1,0 +1,38 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    font-size: 2.5rem;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__projects {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__project-image {
+      width: 100%;
+  }
+
+  &__project-header {
+      font-size: 2rem;
+  }
+
+  &__project-tools {
+      display: flex;
+      flex-direction: row;
+  }
+
+}
