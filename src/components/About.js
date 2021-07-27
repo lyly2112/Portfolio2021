@@ -2,10 +2,11 @@ import React from "react";
 import java from "../images/tools/java.svg";
 import js from "../images/tools/js.svg";
 import react from "../images/tools/react.svg";
+import { Link } from 'react-scroll';
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       {/* <div className="about__empty-container"></div> */}
       <div className="about__content">
         <div className="about__text">
