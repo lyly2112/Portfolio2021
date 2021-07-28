@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+
+    &__element {
+        float: left;
+        display: flex;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+}
