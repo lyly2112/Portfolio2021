@@ -12,31 +12,37 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className="navbar__column--right"></div>
-      <div className="navbar__element">
-        <Link to="about" smooth={true} duration={1000} className="navbar__text">
-          About
-        </Link>
-      </div>
-      <div className="navbar__element">
-        <Link
-          to="portfolio"
-          smooth={true}
-          duration={1000}
-          className="navbar__text"
-        >
-          Portfolio
-        </Link>
-      </div>
-      <div className="navbar__element">
-        <Link
-          to="footer"
-          smooth={true}
-          duration={1000}
-          className="navbar__text"
-        >
-          Links
-        </Link>
+      <div className="navbar__column--right">
+        <div className="navbar__element">
+          <Link
+            to="about"
+            smooth={true}
+            duration={1000}
+            className="navbar__text"
+          >
+            About
+          </Link>
+        </div>
+        <div className="navbar__element">
+          <Link
+            to="portfolio"
+            smooth={true}
+            duration={1000}
+            className="navbar__text"
+          >
+            Portfolio
+          </Link>
+        </div>
+        <div className="navbar__element">
+          <Link
+            to="footer"
+            smooth={true}
+            duration={1000}
+            className="navbar__text"
+          >
+            Links
+          </Link>
+        </div>
       </div>
     </div>
   );

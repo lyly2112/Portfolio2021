@@ -1,10 +1,23 @@
 .navbar {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
+    height: 5rem;
+    text-transform: uppercase;
+    align-items: center;
+
+&__column--left {
+    display: flex;
+    font-weight: 600;
+}
+
+&__column--right {
+    display: flex;
+}
 
     &__element {
         float: left;
