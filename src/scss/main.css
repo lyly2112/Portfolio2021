@@ -42,6 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
+  text-transform: uppercase;
 }
 .home__header {
   display: flex;
@@ -50,7 +51,7 @@ body {
 }
 .home__header-name {
   text-align: center;
-  font-size: 7rem;
+  font-size: 5rem;
   margin: 1rem;
 }
 .home__header-title {
@@ -136,13 +137,21 @@ body {
 
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  height: 15rem;
+  padding: 5rem 0;
   align-items: center;
   background-color: #343A40;
 }
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 5rem 0;
+}
 .footer__icon {
   margin: 0 1rem;
+}
+.footer__copyright {
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */
