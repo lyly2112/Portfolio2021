@@ -7,7 +7,6 @@
   padding-top: 12.5rem;
   margin-bottom: 12.5rem;
 
-
   // &__empty-container {
   //   display: flex;
   // }
@@ -25,13 +24,19 @@
 
   &__header {
     font-size: 2.5rem;
-    margin: 2rem;
+    margin: 2rem;  
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 
   &__tools-header {
     font-size: 2.5rem;
     text-align: center;
     margin: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 
   &__tools-icons {
