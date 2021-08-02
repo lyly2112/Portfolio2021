@@ -84,6 +84,8 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
+  -webkit-animation: animated-text 4s linear 1s 1 normal both;
+          animation: animated-text 4s linear 1s 1 normal both;
 }
 .about__tools-header {
   font-size: 2.5rem;
@@ -99,6 +101,23 @@ body {
   justify-content: space-between;
 }
 
+@-webkit-keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 542px;
+  }
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 542px;
+  }
+}
 .portfolio {
   display: flex;
   flex-direction: column;

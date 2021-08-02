@@ -10,7 +10,7 @@ function About() {
       {/* <div className="about__empty-container"></div> */}
       <div className="about__content">
         <div className="about__text">
-        <div className="about__header">About</div>
+        <h3 className="about__header">About</h3>
         <div className="about__bio">
           I think of myself as an artist within the head of a mathematician. Or
           in other words, I am a forward-thinking and value-driven Software

@@ -28,6 +28,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 700;
+animation: animated-text 4s linear 1s 1 normal both;
   }
 
   &__tools-header {
@@ -44,4 +45,9 @@
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 542px;}
 }
