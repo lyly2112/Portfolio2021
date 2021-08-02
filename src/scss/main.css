@@ -84,6 +84,10 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: solid 3px black;
+  display: inline-block;
   -webkit-animation: animated-text 4s linear 1s 1 normal both;
           animation: animated-text 4s linear 1s 1 normal both;
 }
@@ -106,7 +110,7 @@ body {
     width: 0;
   }
   to {
-    width: 542px;
+    width: 155px;
   }
 }
 
@@ -115,7 +119,7 @@ body {
     width: 0;
   }
   to {
-    width: 542px;
+    width: 155px;
   }
 }
 .portfolio {

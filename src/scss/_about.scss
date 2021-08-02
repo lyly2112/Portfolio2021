@@ -15,20 +15,23 @@
     display: flex;
     width: 60%;
     flex-direction: column;
-}
+  }
 
-  
   &__text {
     font-size: 1.4rem;
   }
 
   &__header {
     font-size: 2.5rem;
-    margin: 2rem;  
+    margin: 2rem;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 700;
-animation: animated-text 4s linear 1s 1 normal both;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: solid 3px black;
+    display: inline-block;
+    animation: animated-text 4s linear 1s 1 normal both;
   }
 
   &__tools-header {
@@ -47,7 +50,11 @@ animation: animated-text 4s linear 1s 1 normal both;
   }
 }
 
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 542px;}
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 155px;
+  }
 }
