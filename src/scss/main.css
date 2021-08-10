@@ -120,6 +120,7 @@ body {
   padding-top: 12.5rem;
   margin-bottom: 12.5rem;
   background-color: #f8f9fa;
+  padding: 8rem 4rem 14rem 4rem;
 }
 .about__content {
   display: flex;
@@ -183,7 +184,7 @@ body {
 .portfolio {
   display: flex;
   flex-direction: column;
-  padding: 5rem 0;
+  padding: 8rem 4rem 14rem 4rem;
 }
 .portfolio__header {
   font-size: 2.5rem;
