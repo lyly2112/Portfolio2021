@@ -37,7 +37,7 @@ function Portfolio() {
           <div className="portfolio__project-header">Sergei Nikiforov</div>
           <div className="portfolio__project-tools">
             <div className="portfolio__project-tool">React</div>
-            <div className="portfolio__project-tool">EmailJS</div>
+            <div className="portfolio__project-tool">Emailjs</div>
           </div>
         </div>
         <div className="portfolio__project">
