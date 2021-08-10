@@ -2,15 +2,14 @@ import React from "react";
 import java from "../images/icons/java.svg";
 import js from "../images/icons/js.svg";
 import react from "../images/icons/react.svg";
-import css from "../images/icons/css.png";
-import git from "../images/icons/git.png";
-import html from "../images/icons/html.png";
+import css from "../images/icons/css.svg";
+import git from "../images/icons/git.svg";
+import html from "../images/icons/html.svg";
 import sass from "../images/icons/sass.svg";
-import vs from "../images/icons/vs.png";
+import vs from "../images/icons/vs.svg";
 import { Link } from "react-scroll";
 
 function About() {
-
   // const headerScroll = document.querySelector(".header-scroll");
 
   // const options = {};
@@ -43,48 +42,40 @@ function About() {
             on.
           </p>
         </div>
-        <div className="about__icons">
-          <div className="about__icons-header">Skills</div>
-          <div className="about__icons-icons">
-            <div className="about__icons__icon">
-              <img
-                className="about__icons__icon__logo"
-                src={react}
-                alt="React"
-              />
-              <div className="about__icons__icon__name">React</div>
+        <div className="about__skills">
+          <div className="about__header">Skills</div>
+          <div className="about__icons">
+            <div className="about__icon">
+              <img className="about__icon-logo" src={react} alt="React" />
+              <div className="about__icon__name">React</div>
             </div>
-            <div className="about__icons__icon">
-              <img
-                className="about__icons__icon__logo"
-                src={js}
-                alt="JavaScript"
-              />
-              <div className="about__icons__icon__name">JavaScript</div>
+            <div className="about__icon">
+              <img className="about__icon-logo" src={js} alt="JavaScript" />
+              <div className="about__icon__name">JavaScript</div>
             </div>
-            <div className="about__icons__icon">
-              <img className="about__icons__icon__logo" src={java} alt="Java" />
-              <div className="about__icons__icon__name">Java</div>
+            <div className="about__icon">
+              <img className="about__icon-logo" src={java} alt="Java" />
+              <div className="about__icon__name">Java</div>
             </div>
-            <div className="about__icons__icon">
-              <img className="about__icons__icon__logo" src={html} alt="HTML5" />
-              <div className="about__icons__icon__name">HTML5</div>
+            <div className="about__icon">
+              <img className="about__icon-logo" src={html} alt="HTML5" />
+              <div className="about__icon__name">HTML5</div>
             </div>
-            <div className="about__icons__icon">
-              <img className="about__icons__icon__logo" src={css} alt="CSS3" />
-              <div className="about__icons__icon__name">CSS3</div>
+            <div className="about__icon">
+              <img className="about__icon-logo" src={css} alt="CSS3" />
+              <div className="about__icon__name">CSS3</div>
             </div>
-            <div className="about__icons__icon">
-              <img className="about__icons__icon__logo" src={sass} alt="Sass" />
-              <div className="about__icons__icon__name">Sass</div>
+            <div className="about__icon">
+              <img className="about__icon-logo" src={sass} alt="Sass" />
+              <div className="about__icon__name">Sass</div>
             </div>
-            <div className="about__icons__icon">
-              <img className="about__icons__icon__logo" src={vs} alt="VS Code" />
-              <div className="about__icons__icon__name">VS Code</div>
+            <div className="about__icon">
+              <img className="about__icon-logo" src={vs} alt="VS Code" />
+              <div className="about__icon__name">VS Code</div>
             </div>
-            <div className="about__icons__icon">
-              <img className="about__icons__icon__logo" src={git} alt="GIT" />
-              <div className="about__icons__icon__name">GIT</div>
+            <div className="about__icon">
+              <img className="about__icon-logo" src={git} alt="GIT" />
+              <div className="about__icon__name">GIT</div>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { ExternalLink } from "react-external-link";
-import git from "../images/icons/git.png";
-import linkedin from "../images/icons/linkedin.png";
+import git from "../images/icons/git.svg";
+import linkedin from "../images/icons/linkedin.svg";
 
 function Footer() {
   return (
