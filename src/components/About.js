@@ -7,6 +7,7 @@ import git from "../images/icons/git.svg";
 import html from "../images/icons/html.svg";
 import sass from "../images/icons/sass.svg";
 import vs from "../images/icons/vs.svg";
+import figma from "../images/icons/figma.svg";
 import { Link } from "react-scroll";
 
 function About() {
@@ -76,6 +77,10 @@ function About() {
             <div className="about__icon">
               <img className="about__icon-logo" src={git} alt="GIT" />
               <div className="about__icon__name">GIT</div>
+            </div>
+            <div className="about__icon">
+              <img className="about__icon-logo" src={figma} alt="Figma" />
+              <div className="about__icon__name">Figma</div>
             </div>
           </div>
         </div>
