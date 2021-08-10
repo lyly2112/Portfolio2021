@@ -23,6 +23,7 @@ function Portfolio() {
           <div className="portfolio__project-header">Diana Webb</div>
           <div className="portfolio__project-tools">
             <div className="portfolio__project-tool">React</div>
+            <div className="portfolio__project-tool">Gatsby</div>
           </div>
         </div>
         <div className="portfolio__project">
@@ -36,6 +37,7 @@ function Portfolio() {
           <div className="portfolio__project-header">Sergei Nikiforov</div>
           <div className="portfolio__project-tools">
             <div className="portfolio__project-tool">React</div>
+            <div className="portfolio__project-tool">EmailJS</div>
           </div>
         </div>
         <div className="portfolio__project">
