@@ -229,19 +229,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 0;
   align-items: center;
-  background-color: #343A40;
+  background-color: #9fb1c4;
 }
 .footer__links {
   display: flex;
   flex-direction: row;
-  padding: 0 0 5rem 0;
 }
 .footer__icon {
-  margin: 0 1rem;
+  height: 2.5rem;
+  padding: 5rem 1rem 5rem 1rem;
 }
 .footer__copyright {
   letter-spacing: 2px;
+  padding-bottom: 2rem;
 }
 /*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */
