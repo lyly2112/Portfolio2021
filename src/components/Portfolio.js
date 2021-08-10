@@ -23,6 +23,8 @@ function Portfolio() {
           <div className="portfolio__project-header">Diana Webb</div>
           <div className="portfolio__project-tools">
             <div className="portfolio__project-tool">React</div>
+            <div className="portfolio__project-tool">JS</div>
+            <div className="portfolio__project-tool">Sass</div>
             <div className="portfolio__project-tool">Gatsby</div>
           </div>
         </div>
@@ -37,6 +39,8 @@ function Portfolio() {
           <div className="portfolio__project-header">Sergei Nikiforov</div>
           <div className="portfolio__project-tools">
             <div className="portfolio__project-tool">React</div>
+            <div className="portfolio__project-tool">JS</div>
+            <div className="portfolio__project-tool">Sass</div>
             <div className="portfolio__project-tool">Emailjs</div>
           </div>
         </div>
@@ -51,6 +55,8 @@ function Portfolio() {
           <div className="portfolio__project-header">Majestic Bay</div>
           <div className="portfolio__project-tools">
             <div className="portfolio__project-tool">React</div>
+            <div className="portfolio__project-tool">JS</div>
+            <div className="portfolio__project-tool">Bootstrap</div>
           </div>
         </div>
         
