@@ -5,9 +5,9 @@
   margin: auto;
   align-items: flex-end;
   padding-top: 12.5rem;
-  margin-bottom: 12.5rem;
-  background-color: #f8f9fa;
-  padding: 8rem 4rem 14rem 4rem;
+  // margin-bottom: 12.5rem;
+  background: #eaedf0;
+  padding: 8rem 4rem;
 
   // &__empty-container {
   //   display: flex;
@@ -17,6 +17,7 @@
     display: flex;
     width: 60%;
     flex-direction: column;
+
   }
 
   &__text {
