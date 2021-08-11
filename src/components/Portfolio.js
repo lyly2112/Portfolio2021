@@ -4,6 +4,7 @@ import dianawebb from "../images/portfolio/dianawebb.JPG";
 import sergeinikiforov from "../images/portfolio/sergeinikiforov.JPG";
 import majesticbay from "../images/portfolio/majesticbay.JPG";
 
+// add "glow-out" animation
 
 function Portfolio() {
   return (
