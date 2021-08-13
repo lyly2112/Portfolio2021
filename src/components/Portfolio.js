@@ -1,19 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ExternalLink } from "react-external-link";
 import dianawebb from "../images/portfolio/dianawebb.JPG";
 import sergeinikiforov from "../images/portfolio/sergeinikiforov.JPG";
 import majesticbay from "../images/portfolio/majesticbay.JPG";
+import styled from "styled-components";
 
 // add "glow-out" animation
 
 function Portfolio() {
+  const GlowIn = styled.p`
+    :hover {
+      box-shadow: 2px 2px 14px 1px rgb(0 0 0 / 40%);
+    }
+  `;
+
   return (
     <div className="portfolio">
+      <GlowIn>Test</GlowIn>
+
       <div className="portfolio__header">Portfolio</div>
-      {/* <div className="portfolio__description">
-      </div> */}
       <div className="portfolio__projects">
-        <div className="portfolio__project">
+        <GlowIn className="portfolio__project">
           <ExternalLink href="https://github.com/MajesticBay/diana-webb">
             <img
               className="portfolio__project-image"
@@ -28,8 +35,8 @@ function Portfolio() {
             <div className="portfolio__project-tool">Sass</div>
             <div className="portfolio__project-tool">Gatsby</div>
           </div>
-        </div>
-        <div className="portfolio__project">
+        </GlowIn>
+        <GlowIn className="portfolio__project">
           <ExternalLink href="https://github.com/lyly2112/nikiforov">
             <img
               className="portfolio__project-image"
@@ -44,8 +51,8 @@ function Portfolio() {
             <div className="portfolio__project-tool">Sass</div>
             <div className="portfolio__project-tool">Emailjs</div>
           </div>
-        </div>
-        <div className="portfolio__project">
+        </GlowIn>
+        <GlowIn className="portfolio__project">
           <ExternalLink href="https://github.com/lyly2112/MajesticBay">
             <img
               className="portfolio__project-image"
@@ -59,8 +66,7 @@ function Portfolio() {
             <div className="portfolio__project-tool">JS</div>
             <div className="portfolio__project-tool">Bootstrap</div>
           </div>
-        </div>
-        
+        </GlowIn>
       </div>
     </div>
   );
