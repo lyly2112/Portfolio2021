@@ -3,12 +3,12 @@ import { ExternalLink } from "react-external-link";
 import dianawebb from "../images/portfolio/dianawebb.JPG";
 import sergeinikiforov from "../images/portfolio/sergeinikiforov.JPG";
 import majesticbay from "../images/portfolio/majesticbay.JPG";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // add "glow-out" animation
 
 function Portfolio() {
-  const GlowIn = styled.p`
+  const GlowIn = styled.div`
     :hover {
       box-shadow: 2px 2px 14px 1px rgb(0 0 0 / 40%);
     }
@@ -16,8 +16,6 @@ function Portfolio() {
 
   return (
     <div className="portfolio">
-      <GlowIn>Test</GlowIn>
-
       <div className="portfolio__header">Portfolio</div>
       <div className="portfolio__projects">
         <GlowIn className="portfolio__project">
