@@ -1,5 +1,6 @@
 .home {
   display: flex;
+  flex-direction: column;
 	background-color: #f3f6f8;
   color: black;
   height: 100vh;
@@ -26,6 +27,11 @@
 &__header-title {
   font-size: 2rem;
   margin: 1rem;
+
+}
+
+&__arrow {
+  width: 3rem;
 
 }
 }

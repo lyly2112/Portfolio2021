@@ -92,6 +92,7 @@ body {
 
 .home {
   display: flex;
+  flex-direction: column;
   background-color: #f3f6f8;
   color: black;
   height: 100vh;
@@ -115,6 +116,9 @@ body {
 .home__header-title {
   font-size: 2rem;
   margin: 1rem;
+}
+.home__arrow {
+  width: 3rem;
 }
 .about {
   display: flex;
@@ -215,6 +219,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 4px;
   margin: 1rem;
+  background-color: #ffffff;
 }
 .portfolio__project-image {
   width: 100%;
@@ -248,6 +253,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #9fb1c4;
 }
 .footer__links {
   display: flex;
