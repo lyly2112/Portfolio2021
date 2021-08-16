@@ -14,7 +14,7 @@ function Footer() {
           <img className="footer__icon" src={linkedin} alt="linkedin" />
         </ExternalLink>
       </div>
-      <div className="footer__copyright">	&copy; Liliya Sherstobitova</div>
+      <h2 className="footer__copyright">	&copy; Liliya Sherstobitova</h2>
     </div>
   );
 }
