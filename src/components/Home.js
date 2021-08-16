@@ -2,6 +2,8 @@ import React from "react";
 //import Navbar from "./Navbar";
 import arrow from "../images/icons/down-arrow.svg";
 import styled, { keyframes } from "styled-components";
+import { animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Home() {
   const bounce = keyframes`
@@ -15,7 +17,6 @@ function Home() {
 
   const Bounce = styled.div`
     animation: ${bounce} 3s linear infinite;
-
   `;
 
   // const GlowInArrow = styled.div`
@@ -23,7 +24,7 @@ function Home() {
   //     filter: drop-shadow(0px 5px 2px rgb(0 0 0 / 1));
   //     opacity: 1;
   //   }
-// `;
+  // `;
 
   return (
     <div className="home">
@@ -33,11 +34,14 @@ function Home() {
         {/* add follow up fade effect */}
         <div className="home__header-title">WEB developer</div>
       </div>
-      <Bounce id="home__arrow">
-        <div className="home__arrow">
-          <img className="home__arrow-down" src={arrow} alt="see more" />
-        </div>
-      </Bounce>
+
+      <Link to="about" smooth={true} duration={1000} className="navbar__text">
+        <Bounce id="home__arrow">
+          <div className="home__arrow">
+            <img className="home__arrow-down" src={arrow} alt="see more" />
+          </div>
+        </Bounce>
+      </Link>
     </div>
   );
 }
