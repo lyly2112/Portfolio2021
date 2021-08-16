@@ -1,7 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
-	background-color: #f3f6f8;
+	// background-color: #f3f6f8;
   color: black;
   height: 100vh;
   width: 100%;
@@ -10,6 +10,9 @@
   // margin-top: 5rem;
   text-transform: uppercase;
   letter-spacing: 3px;
+//   background-color: #D9AFD9;
+// background-image: linear-gradient(0deg, #97D9E1 0%, #FFFFFF 100%);
+
 
 &__header {
   display: flex;
@@ -31,8 +34,13 @@
 }
 
 &__arrow {
-  width: 3rem;
 
+  width: 3rem;
+}
+
+#home__arrow {
+position: absolute;
+bottom: 0;
 }
 }
 /*# sourceMappingURL=home.css.map */

@@ -4,29 +4,38 @@ import arrow from "../images/icons/down-arrow.svg";
 import styled, { keyframes } from "styled-components";
 
 function Home() {
-  
   const bounce = keyframes`
-  0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-   40% {transform: translateY(-30px);} 
-   60% {transform: translateY(-15px);} 
+  0% {opacity: 1; } 
+  50% {opacity: 0.4;}
+   100% {opacity: 1;} 
+    0% {transform: translateY(0px);  } 
+    50% {transform: translateY(-30px);  } 
+    100% {transform: translateY(0px);  }    
   `;
 
   const Bounce = styled.div`
-    animation: ${bounce} 5s linear infinite;
+    animation: ${bounce} 3s linear infinite;
+
   `;
+
+  // const GlowInArrow = styled.div`
+  // :hover {
+  //     filter: drop-shadow(0px 5px 2px rgb(0 0 0 / 1));
+  //     opacity: 1;
+  //   }
+// `;
 
   return (
     <div className="home">
       <div className="home__header">
-        //add drop effect
+        {/* add drop effect */}
         <div className="home__header-name">Liliya Sherstobitova</div>
-        //add follow up fade effect
+        {/* add follow up fade effect */}
         <div className="home__header-title">WEB developer</div>
-        //add arrow button with bounce and fade effect when up and bright down
       </div>
-      <Bounce>
-        <div>
-          <img className="home__arrow" src={arrow} alt="see more" />
+      <Bounce id="home__arrow">
+        <div className="home__arrow">
+          <img className="home__arrow-down" src={arrow} alt="see more" />
         </div>
       </Bounce>
     </div>
