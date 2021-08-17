@@ -9,7 +9,9 @@
   justify-content: center;
   // margin-top: 5rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 3px;  
+  background-color: #f4f5f9;
+
 //   background-color: #D9AFD9;
 // background-image: linear-gradient(0deg, #97D9E1 0%, #FFFFFF 100%);
 
@@ -19,6 +21,7 @@
   flex-direction: column;
   align-items: center;
   font-weight: 700;
+  color:#60e5ec;
 }
 
 &__header-name {

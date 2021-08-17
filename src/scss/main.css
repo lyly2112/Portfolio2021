@@ -100,12 +100,14 @@ body {
   justify-content: center;
   text-transform: uppercase;
   letter-spacing: 3px;
+  background-color: #f4f5f9;
 }
 .home__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-weight: 700;
+  color: #60e5ec;
 }
 .home__header-name {
   text-align: center;
