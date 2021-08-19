@@ -100,7 +100,6 @@ body {
   justify-content: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  background-color: #f4f5f9;
 }
 .home__header {
   display: flex;
@@ -108,6 +107,8 @@ body {
   align-items: center;
   font-weight: 700;
   color: #60e5ec;
+  justify-content: center;
+  text-align: center;
 }
 .home__header-name {
   text-align: center;
@@ -116,7 +117,6 @@ body {
 }
 .home__header-title {
   font-size: 2rem;
-  margin: 1rem;
 }
 .home__arrow {
   width: 3rem;
@@ -258,7 +258,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #9fb1c4;
+  background-color: #e8eaec;
 }
 .footer__links {
   display: flex;
