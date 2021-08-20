@@ -9,19 +9,11 @@ function Home() {
   const nameAnimation = keyframes`
     0% {
       opacity: 0;
-      -webkit-transform: translateY(-75px);
       transform: translateY(-75px);
     }
 
-    10% {
-        opacity: 0;
-        -webkit-transform: translateY(-75px);
-        transform: translateY(-75px);
-    }
-
-    49% {
+    50% {
         opacity: 1;
-        -webkit-transform: translate(0);
         transform: translate(0);
     }
   `;
@@ -39,7 +31,6 @@ function Home() {
 
     50% {
       opacity: 1;
-            transation: width 10s;
       width: 1%;
     }
 
@@ -49,14 +40,31 @@ function Home() {
       animation-fill-mode: forwards;
     }`;
 
+  const titleAnimation = keyframes`
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        animation-fill-mode: forwards;
+    }
+  `;
+
   const Line = styled.svg`
-    animation: ${line} 2s;
+    animation: ${line} 4s;
     width: 100%;
     height: 2rem;
   `;
 
   const NameAnimation = styled.h2`
-    animation: ${nameAnimation} 5s;
+    animation: ${nameAnimation} 2s;
+  `;
+
+  const TitleAnimation = styled.h3`
+    animation: ${titleAnimation} 6s;
   `;
 
   const arrowAnimation = keyframes`
@@ -77,7 +85,26 @@ function Home() {
 
   const ArrowAnimation = styled.div`
     animation: ${arrowAnimation} 3s linear infinite;
+    animation-delay: 6s;
   `;
+
+
+  const arrowVisible = keyframes`
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }`;
+
+  const ArrowVisible = styled.div`
+    animation: ${arrowVisible} 7s linear ;
+
+  `;
+
 
   return (
     <div className="home">
@@ -119,14 +146,20 @@ function Home() {
             </svg>
           </Line>
         </NameAnimation>
-        <div className="home__header-title">WEB developer</div>
+        <TitleAnimation>
+          <h3 className="home__header-title">WEB developer</h3>
+        </TitleAnimation>
       </div>
       <Link to="about" smooth={true} duration={1000} className="navbar__text">
-        <ArrowAnimation id="home__arrow">
-          <div className="home__arrow">
+        
+          <ArrowVisible div id="home__arrow">
+            
+            <ArrowAnimation className="home__arrow">
             <img className="home__arrow-down" src={arrow} alt="see more" />
-          </div>
-        </ArrowAnimation>
+</ArrowAnimation>
+
+          </ArrowVisible>
+        
       </Link>
     </div>
   );
