@@ -1,4 +1,6 @@
 import React from "react";
+import Reveal from "react-reveal/Reveal";
+
 import java from "../images/icons/java.svg";
 import js from "../images/icons/js.svg";
 import react from "../images/icons/react.svg";
@@ -9,26 +11,111 @@ import sass from "../images/icons/sass.svg";
 import vs from "../images/icons/vs.svg";
 import figma from "../images/icons/figma.svg";
 import { Link } from "react-scroll";
+import styled, { keyframes } from "styled-components";
+import { animateScroll as scroll } from "react-scroll";
+import { useInView } from "react-intersection-observer";
+import "animate.css/animate.min.css";
+import ScrollAnimation from "react-animate-on-scroll";
+import { useState, useEffect } from "react";
+import "animate.css";
 
 function About() {
-  // const headerScroll = document.querySelector(".header-scroll");
 
-  // const options = {};
+  let target;
 
-  // const observer = new IntersectionObserver(function (entries, observer) {
-  //   entries.forEach((entry) => {
-  //     console.log(entry.target);
-  //   });
-  // }, options);
+  window.addEventListener(
+    "load",
+    (event) => {
+      target = document.querySelector("#about__header");
 
-  // observer.observe(headerScroll);
+      createObserver();
+    },
+    false
+  );
+
+  function createObserver() {
+
+    let observer;
+
+    let options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    observer = new IntersectionObserver(callback, options);
+    observer.observe(target);
+  }
+
+  let callback = (options, observer) => {
+    options.forEach((option) => {
+      if (option.isIntersecting) {
+        console.log("yes!");
+        // option.target.style.color = 'red'
+        // option.target.classList.add('animate__animated', 'animate__bounceOutLeft');
+        // option.target.classList.add('animate__animated', 'animate__bounceOutLeft');
+        option.target.classList.add("header-animation-type");
+      } else {
+        console.log("no!");
+        // option.target.style.color = 'green'
+        option.target.classList.remove("header-animation-type");
+
+        option.target.classList.add("header-animation-wipe");
+      }
+    });
+  };
+
+  const type = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(200px);
+
+  }
+`;
+
+  const HeaderAnimationType = styled.div`
+    animation: ${type} 2s linear;
+  `;
+
+  const wipe = keyframes`
+0% {
+  opacity: 1;
+  transform: translateX(200px);
+
+}
+100% {
+    opacity: 0;
+    transform: translateX(0);
+
+}
+`;
+
+  const HeaderAnimationWipe = styled.div`
+    animation: ${wipe} 2s linear;
+  `;
+
+  const wipeA = keyframes`
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+`;
 
   return (
     <div className="about" id="about">
       {/* <div className="about__empty-container"></div> */}
       <div className="about__content">
         <div className="about__text">
-          <h3 className="about__header header-scroll">About</h3>
+          <div className="about__header" id="about__header">
+            About
+          </div>
           <p className="about__bio">
             I think of myself as an artist within the head of a mathematician.
             Or in other words, I am a forward-thinking and value-driven Software

@@ -24,6 +24,11 @@
     font-size: 1.4rem;
   }
 
+  &__header-container {
+display: flex;
+flex-direction: row;
+  }
+
   &__header {
     font-size: 2.5rem;
     margin: 2rem;
@@ -32,9 +37,16 @@
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
-    border-right: solid 3px black;
+    // border-right: solid 3px black;
     display: inline-block;
-    animation: animated-text 4s linear 1s 1 normal both;
+    // animation: animated-text 4s linear 1s 1 normal both;
+  }
+
+  &__bar {
+width: 2px;
+height: 2.5rem;
+background: black;
+position: relative;
   }
 
   &__icons {
@@ -61,11 +73,46 @@
   }
 }
 
-@keyframes animated-text {
-  from {
-    width: 0;
+// @keyframes animated-text {
+//   from {
+//     width: 0;
+//   }
+//   to {
+//     width: 155px;
+//   }
+// }
+
+
+.header-animation-type {
+  animation: type 2s linear;
+}
+
+
+@keyframes type {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
   }
-  to {
-    width: 155px;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+.header-animation-wipe {
+  animation: wipe 2s linear;
+}
+
+
+@keyframes wipe {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-300px);
   }
 }

@@ -143,6 +143,10 @@ body {
 .about__text {
   font-size: 1.4rem;
 }
+.about__header-container {
+  display: flex;
+  flex-direction: row;
+}
 .about__header {
   font-size: 2.5rem;
   margin: 2rem;
@@ -151,10 +155,13 @@ body {
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
-  border-right: solid 3px black;
   display: inline-block;
-  -webkit-animation: animated-text 4s linear 1s 1 normal both;
-          animation: animated-text 4s linear 1s 1 normal both;
+}
+.about__bar {
+  width: 2px;
+  height: 2.5rem;
+  background: black;
+  position: relative;
 }
 .about__icons {
   display: flex;
@@ -177,21 +184,56 @@ body {
   margin-bottom: 0.5rem;
 }
 
-@-webkit-keyframes animated-text {
-  from {
-    width: 0;
+.header-animation-type {
+  -webkit-animation: type 2s linear;
+          animation: type 2s linear;
+}
+
+@-webkit-keyframes type {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
   }
-  to {
-    width: 155px;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-@keyframes animated-text {
-  from {
-    width: 0;
+@keyframes type {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
   }
-  to {
-    width: 155px;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.header-animation-wipe {
+  -webkit-animation: wipe 2s linear;
+          animation: wipe 2s linear;
+}
+
+@-webkit-keyframes wipe {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+}
+
+@keyframes wipe {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-300px);
   }
 }
 .portfolio {
