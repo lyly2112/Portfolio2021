@@ -20,100 +20,61 @@ import { useState, useEffect } from "react";
 import "animate.css";
 
 function About() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    rootMargin: "-100px 0px",
+  });
+  useEffect(() => {
+    if (inView) {
+      console.log("yes");
+    } else {
+      console.log("no");
+    }
+  }, [inView]);
 
-  let target;
-
-  window.addEventListener(
-    "load",
-    (event) => {
-      target = document.querySelector("#about__header");
-
-      createObserver();
-    },
-    false
-  );
-
-  function createObserver() {
-
-    let observer;
-
-    let options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
-    };
-
-    observer = new IntersectionObserver(callback, options);
-    observer.observe(target);
-  }
-
-  let callback = (options, observer) => {
-    options.forEach((option) => {
-      if (option.isIntersecting) {
-        console.log("yes!");
-        // option.target.style.color = 'red'
-        // option.target.classList.add('animate__animated', 'animate__bounceOutLeft');
-        // option.target.classList.add('animate__animated', 'animate__bounceOutLeft');
-        option.target.classList.add("header-animation-type");
-      } else {
-        console.log("no!");
-        // option.target.style.color = 'green'
-        option.target.classList.remove("header-animation-type");
-
-        option.target.classList.add("header-animation-wipe");
-      }
-    });
-  };
+  const Header = () => <h2>About</h2>;
 
   const type = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateX(0);
+    0% {
+      opacity: 0;
+      // transform: translateX(0);
 
-  }
-  100% {
-      opacity: 1;
-      transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        // transform: translateX(200px);
 
-  }
-`;
+    }
+  `;
 
   const HeaderAnimationType = styled.div`
-    animation: ${type} 2s linear;
+    animation: ${type} 5s linear;
   `;
 
   const wipe = keyframes`
-0% {
-  opacity: 1;
-  transform: translateX(200px);
+  0% {
+    opacity: 1;
+    transform: translateX(200px);
 
-}
-100% {
-    opacity: 0;
-    transform: translateX(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(0);
 
-}
-`;
-
-  const HeaderAnimationWipe = styled.div`
-    animation: ${wipe} 2s linear;
+  }
   `;
-
-  const wipeA = keyframes`
-	0% {
-		transform: scale(0, .025);
-	}
-	50% {
-		transform: scale(1, .025);
-	}
-`;
 
   return (
     <div className="about" id="about">
-      {/* <div className="about__empty-container"></div> */}
       <div className="about__content">
         <div className="about__text">
-          <div className="about__header" id="about__header">
+          <div
+            ref={ref}
+            className={`${
+              inView ? "header-animation-type" : "header-animation-wipe"
+            }`}
+            id="header"
+          >
             About
           </div>
           <p className="about__bio">

@@ -17,7 +17,6 @@
     display: flex;
     width: 60%;
     flex-direction: column;
-
   }
 
   &__text {
@@ -25,8 +24,8 @@
   }
 
   &__header-container {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   &__header {
@@ -43,10 +42,10 @@ flex-direction: row;
   }
 
   &__bar {
-width: 2px;
-height: 2.5rem;
-background: black;
-position: relative;
+    width: 2px;
+    height: 2.5rem;
+    background: black;
+    position: relative;
   }
 
   &__icons {
@@ -82,11 +81,9 @@ position: relative;
 //   }
 // }
 
-
 .header-animation-type {
-  animation: type 2s linear;
+  animation: type 2s linear forwards;
 }
-
 
 @keyframes type {
   0% {
@@ -99,12 +96,9 @@ position: relative;
   }
 }
 
-
-
 .header-animation-wipe {
-  animation: wipe 2s linear;
+  animation: wipe 2s linear forwards;
 }
-
 
 @keyframes wipe {
   0% {

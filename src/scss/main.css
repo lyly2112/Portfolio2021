@@ -185,8 +185,8 @@ body {
 }
 
 .header-animation-type {
-  -webkit-animation: type 2s linear;
-          animation: type 2s linear;
+  -webkit-animation: type 2s linear forwards;
+          animation: type 2s linear forwards;
 }
 
 @-webkit-keyframes type {
@@ -211,8 +211,8 @@ body {
   }
 }
 .header-animation-wipe {
-  -webkit-animation: wipe 2s linear;
-          animation: wipe 2s linear;
+  -webkit-animation: wipe 2s linear forwards;
+          animation: wipe 2s linear forwards;
 }
 
 @-webkit-keyframes wipe {
