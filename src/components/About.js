@@ -22,7 +22,7 @@ import "animate.css";
 function About() {
   const { ref, inView } = useInView({
     threshold: 0.5,
-    rootMargin: "-100px 0px",
+    rootMargin: "-50px 0px",
   });
   useEffect(() => {
     if (inView) {
@@ -31,8 +31,6 @@ function About() {
       console.log("no");
     }
   }, [inView]);
-
-  const Header = () => <h2>About</h2>;
 
   const type = keyframes`
     0% {
@@ -68,15 +66,19 @@ function About() {
     <div className="about" id="about">
       <div className="about__content">
         <div className="about__text">
-          <div
-            ref={ref}
-            className={`${
-              inView ? "header-animation-type" : "header-animation-wipe"
-            }`}
-            id="header"
-          >
-            About
+          <div className="about__header-container">
+            <div className="about__header">
+              <h2
+                ref={ref}
+                className={`${
+                  inView ? "header-animation-type" : "header-animation-wipe"
+                }`}
+              >
+                About
+              </h2>
+            </div>
           </div>
+
           <p className="about__bio">
             I think of myself as an artist within the head of a mathematician.
             Or in other words, I am a forward-thinking and value-driven Software

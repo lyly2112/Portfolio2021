@@ -1,9 +1,9 @@
 .about {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin: auto;
-  align-items: flex-end;
+  // text-align: center;
+  // margin: auto;
+  align-items: center;
   padding-top: 12.5rem;
   // margin-bottom: 12.5rem;
   background: #eaedf0;
@@ -20,26 +20,36 @@
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
     font-size: 1.4rem;
   }
 
   &__header-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
+  // &__header {
+  //   align-items: flex-start;
+  // }
+  // &__header-container {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
 
-  &__header {
-    font-size: 2.5rem;
-    margin: 2rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 700;
-    white-space: nowrap;
-    overflow: hidden;
-    // border-right: solid 3px black;
-    display: inline-block;
-    // animation: animated-text 4s linear 1s 1 normal both;
-  }
+  // &__header {
+  //   font-size: 2.5rem;
+  //   margin: 2rem;
+  //   letter-spacing: 3px;
+  //   text-transform: uppercase;
+  //   font-weight: 700;
+  //   white-space: nowrap;
+  //   overflow: hidden;
+  //   // border-right: solid 3px black;
+  //   display: inline-block;
+  //   // animation: animated-text 4s linear 1s 1 normal both;
+  // }
 
   &__bar {
     width: 2px;
@@ -82,22 +92,47 @@
 // }
 
 .header-animation-type {
-  animation: type 2s linear forwards;
+  // align-items: flex-start;
+  // align-self: flex-start;
+  font-size: 2.5rem;
+  // margin: 2rem ;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  // border-right: solid 3px black;
+  // animation: animated-text 4s linear 1s 1 normal both;
+  // animation: type 2s linear forwards;
+    white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 2s linear 1s 1 normal both;
+  border-right: solid 5px rgba(255,255,255,.75);
+  // margin: 0 auto;
+   
 }
 
 @keyframes type {
   0% {
     opacity: 0;
-    transform: translateX(-300px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
   }
 }
 
 .header-animation-wipe {
-  animation: wipe 2s linear forwards;
+  font-size: 2.5rem;
+  // margin: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  // border-right: solid 3px black;
+  display: inline-block;
+  // animation: animated-text 4s linear 1s 1 normal both;
+  // animation: wipe 2s linear forwards;
 }
 
 @keyframes wipe {
@@ -109,4 +144,9 @@
     opacity: 0;
     transform: translateX(-300px);
   }
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 155px;}
 }
