@@ -143,10 +143,6 @@ body {
   flex-direction: column;
   font-size: 1.4rem;
 }
-.about__header-container {
-  display: flex;
-  flex-direction: column;
-}
 .about__bar {
   width: 2px;
   height: 2.5rem;
@@ -181,30 +177,12 @@ body {
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: animated-text 2s linear 1s 1 normal both;
-          animation: animated-text 2s linear 1s 1 normal both;
+  display: inline-block;
+  -webkit-animation: animated-text-type 1s linear 1 normal both;
+          animation: animated-text-type 1s linear 1 normal both;
   border-right: solid 5px rgba(255, 255, 255, 0.75);
 }
 
-@-webkit-keyframes type {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes type {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .header-animation-wipe {
   font-size: 2.5rem;
   letter-spacing: 3px;
@@ -213,30 +191,12 @@ body {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
+  -webkit-animation: animated-text-wipe 1s linear 1 normal both;
+          animation: animated-text-wipe 1s linear 1 normal both;
+  border-right: solid 5px rgba(255, 255, 255, 0.75);
 }
 
-@-webkit-keyframes wipe {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-300px);
-  }
-}
-
-@keyframes wipe {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-300px);
-  }
-}
-@-webkit-keyframes animated-text {
+@-webkit-keyframes animated-text-type {
   from {
     width: 0;
   }
@@ -244,12 +204,31 @@ body {
     width: 155px;
   }
 }
-@keyframes animated-text {
+
+@keyframes animated-text-type {
   from {
     width: 0;
   }
   to {
     width: 155px;
+  }
+}
+@-webkit-keyframes animated-text-wipe {
+  from {
+    width: 155px;
+  }
+  to {
+    width: 0;
+    display: none;
+  }
+}
+@keyframes animated-text-wipe {
+  from {
+    width: 155px;
+  }
+  to {
+    width: 0;
+    display: none;
   }
 }
 .portfolio {

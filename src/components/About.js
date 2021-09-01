@@ -24,50 +24,21 @@ function About() {
     threshold: 0.5,
     rootMargin: "-50px 0px",
   });
+
   useEffect(() => {
     if (inView) {
-      console.log("yes");
+      console.log("inView:", inView);
     } else {
-      console.log("no");
+      console.log("inView:", inView);
     }
   }, [inView]);
-
-  const type = keyframes`
-    0% {
-      opacity: 0;
-      // transform: translateX(0);
-
-    }
-    100% {
-        opacity: 1;
-        // transform: translateX(200px);
-
-    }
-  `;
-
-  const HeaderAnimationType = styled.div`
-    animation: ${type} 5s linear;
-  `;
-
-  const wipe = keyframes`
-  0% {
-    opacity: 1;
-    transform: translateX(200px);
-
-  }
-  100% {
-      opacity: 0;
-      transform: translateX(0);
-
-  }
-  `;
 
   return (
     <div className="about" id="about">
       <div className="about__content">
         <div className="about__text">
-          <div className="about__header-container">
-            <div className="about__header">
+          {/* <div className="about__header-container">
+            <div className="about__header"> */}
               <h2
                 ref={ref}
                 className={`${
@@ -76,9 +47,8 @@ function About() {
               >
                 About
               </h2>
-            </div>
-          </div>
-
+            {/* </div>
+          </div> */}
           <p className="about__bio">
             I think of myself as an artist within the head of a mathematician.
             Or in other words, I am a forward-thinking and value-driven Software
