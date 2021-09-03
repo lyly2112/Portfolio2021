@@ -33,21 +33,57 @@ function About() {
     }
   }, [inView]);
 
+  // function animateStart() {
+  //   const element = document.querySelector(".about__icon-logo");
+  //   element.classList.add("animate__animated", "animate__heartBeat");
+  //   element.style.setProperty('--animate-duration', '0.5s');
+  //   element.addEventListener("animationend", () => {
+  //     // do something
+  //   });
+  //   return element;
+  // }
+
+  // function animateEnd() {
+  //   const element = document.querySelector(".about__icon-logo");
+  //   element.classList.add("animate__animated", "animate__heartBeat");
+
+  //   element.addEventListener("animationend", () => {
+  //     // do something
+  //   });
+  //   return element;
+  // }
+
+  const animateCSS = (element, animation, prefix = 'animate__') =>
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+    node.classList.add(`${prefix}animated`, animationName);
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove(`${prefix}animated`, animationName);
+      resolve('Animation ended');
+    }
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+  });
+
+
   return (
     <div className="about" id="about">
       <div className="about__content">
         <div className="about__text">
           {/* <div className="about__header-container">
             <div className="about__header"> */}
-              <h2
-                ref={ref}
-                className={`${
-                  inView ? "header-animation-type" : "header-animation-wipe"
-                }`}
-              >
-                About
-              </h2>
-            {/* </div>
+          <h2
+            ref={ref}
+            className={`${
+              inView ? "header-animation-type" : "header-animation-wipe"
+            }`}
+          >
+            About
+          </h2>
+          {/* </div>
           </div> */}
           <p className="about__bio">
             I think of myself as an artist within the head of a mathematician.
@@ -67,39 +103,69 @@ function About() {
           <div className="about__header">Skills</div>
           <div className="about__icons">
             <div className="about__icon">
-              <img className="about__icon-logo" src={react} alt="React" />
+              <img className="about__icon-logo react" src={react} alt="React" 
+                              onMouseEnter={() => animateCSS('.react', 'rotateIn')}
+                              onMouseLeave={() => animateCSS('.react', 'rotateIn')}
+              />
               <div className="about__icon__name">React</div>
             </div>
             <div className="about__icon">
-              <img className="about__icon-logo" src={js} alt="JavaScript" />
+              <img className="about__icon-logo js" src={js} alt="JavaScript" 
+              
+              onMouseEnter={() => animateCSS('.js', 'rubberBand')}
+              onMouseLeave={() => animateCSS('.js', 'rubberBand')}/>
               <div className="about__icon__name">JavaScript</div>
             </div>
             <div className="about__icon">
-              <img className="about__icon-logo" src={java} alt="Java" />
+              <img className="about__icon-logo java" src={java} alt="Java" 
+               onMouseEnter={() => animateCSS('.java', 'bounce')}
+               onMouseLeave={() => animateCSS('.java', 'bounce')}
+              />
               <div className="about__icon__name">Java</div>
             </div>
             <div className="about__icon">
-              <img className="about__icon-logo" src={html} alt="HTML5" />
+              <img
+                className="about__icon-logo html"
+                src={html}
+                alt="HTML5"
+                onMouseEnter={() => animateCSS('.html', 'pulse')}
+                onMouseLeave={() => animateCSS('.html', 'pulse')}
+              />
               <div className="about__icon__name">HTML5</div>
             </div>
             <div className="about__icon">
-              <img className="about__icon-logo" src={css} alt="CSS3" />
+              <img className="about__icon-logo css" src={css} alt="CSS3" 
+              
+              onMouseEnter={() => animateCSS('.css', 'swing')}
+              onMouseLeave={() => animateCSS('.css', 'swing')}/>
               <div className="about__icon__name">CSS3</div>
             </div>
             <div className="about__icon">
-              <img className="about__icon-logo" src={sass} alt="Sass" />
+              <img className="about__icon-logo sass" src={sass} alt="Sass" 
+               onMouseEnter={() => animateCSS('.sass', 'tada')}
+               onMouseLeave={() => animateCSS('.sass', 'tada')}
+               />
               <div className="about__icon__name">Sass</div>
             </div>
             <div className="about__icon">
-              <img className="about__icon-logo" src={vs} alt="VS Code" />
+              <img className="about__icon-logo vs" src={vs} alt="VS Code" 
+               onMouseEnter={() => animateCSS('.vs', 'heartBeat')}
+               onMouseLeave={() => animateCSS('.vs', 'heartBeat')}
+               />
               <div className="about__icon__name">VS Code</div>
             </div>
             <div className="about__icon">
-              <img className="about__icon-logo" src={git} alt="GIT" />
+              <img className="about__icon-logo git" src={git} alt="GIT" 
+               onMouseEnter={() => animateCSS('.git', 'jello')}
+               onMouseLeave={() => animateCSS('.git', 'jello')}
+               />
               <div className="about__icon__name">GIT</div>
             </div>
             <div className="about__icon">
-              <img className="about__icon-logo" src={figma} alt="Figma" />
+              <img className="about__icon-logo figma" src={figma} alt="Figma" 
+               onMouseEnter={() => animateCSS('.figma', 'hinge')}
+              //  onMouseLeave={() => animateCSS('.figma', 'hinge')}
+               />
               <div className="about__icon__name">Figma</div>
             </div>
           </div>

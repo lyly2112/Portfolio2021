@@ -51,16 +51,24 @@
   //   // animation: animated-text 4s linear 1s 1 normal both;
   // }
 
-  &__bar {
-    width: 2px;
-    height: 2.5rem;
-    background: black;
-    position: relative;
+  // &__bar {
+  //   width: 2px;
+  //   height: 2.5rem;
+  //   background: black;
+  //   position: relative;
+  // }
+
+  &__skills {
+display: flex;
+flex-direction: column;
   }
 
   &__icons {
     display: flex;
     flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
     justify-content: space-between;
   }
 
@@ -73,6 +81,9 @@
     line-height: 1.7rem;
     letter-spacing: 0rem;
     text-align: center;
+        justify-content: center;
+    align-items: center;
+
   }
 
   &__icon-logo {
@@ -101,6 +112,8 @@
   // overflow: hidden;
   animation: animated-text-type 1s linear  1 normal both;
   border-right: solid 5px rgba(255,255,255,.75);
+  border-left: solid 5px rgba(255,255,255,.75);
+
   // margin: 0 auto;
    
 }
