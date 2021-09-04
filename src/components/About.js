@@ -111,7 +111,6 @@ function About() {
             </div>
             <div className="about__icon">
               <img className="about__icon-logo js" src={js} alt="JavaScript" 
-              
               onMouseEnter={() => animateCSS('.js', 'rubberBand')}
               onMouseLeave={() => animateCSS('.js', 'rubberBand')}/>
               <div className="about__icon__name">JavaScript</div>
@@ -135,7 +134,6 @@ function About() {
             </div>
             <div className="about__icon">
               <img className="about__icon-logo css" src={css} alt="CSS3" 
-              
               onMouseEnter={() => animateCSS('.css', 'swing')}
               onMouseLeave={() => animateCSS('.css', 'swing')}/>
               <div className="about__icon__name">CSS3</div>

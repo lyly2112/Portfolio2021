@@ -38,18 +38,16 @@
   //   flex-direction: row;
   // }
 
-  // &__header {
-  //   font-size: 2.5rem;
-  //   margin: 2rem;
-  //   letter-spacing: 3px;
-  //   text-transform: uppercase;
-  //   font-weight: 700;
-  //   white-space: nowrap;
-  //   overflow: hidden;
-  //   // border-right: solid 3px black;
-  //   display: inline-block;
-  //   // animation: animated-text 4s linear 1s 1 normal both;
-  // }
+  &__header {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+  }
 
   // &__bar {
   //   width: 2px;
@@ -59,8 +57,8 @@
   // }
 
   &__skills {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   &__icons {
@@ -81,9 +79,8 @@ flex-direction: column;
     line-height: 1.7rem;
     letter-spacing: 0rem;
     text-align: center;
-        justify-content: center;
+    justify-content: center;
     align-items: center;
-
   }
 
   &__icon-logo {
@@ -110,12 +107,11 @@ flex-direction: column;
   // animation: type 2s linear forwards;
   //   white-space: nowrap;
   // overflow: hidden;
-  animation: animated-text-type 1s linear  1 normal both;
-  border-right: solid 5px rgba(255,255,255,.75);
-  border-left: solid 5px rgba(255,255,255,.75);
+  animation: animated-text-type 1s linear 1 normal both;
+  border-right: solid 5px rgba(255, 255, 255, 0.75);
+  border-left: solid 5px rgba(255, 255, 255, 0.75);
 
   // margin: 0 auto;
-   
 }
 
 .header-animation-wipe {
@@ -128,19 +124,25 @@ flex-direction: column;
   overflow: hidden;
   // border-right: solid 3px black;
   display: inline-block;
-  animation: animated-text-wipe 1s linear 1  normal both;
-  border-right: solid 5px rgba(255,255,255,.75);
+  animation: animated-text-wipe 1s linear 1 normal both;
+  border-right: solid 5px rgba(255, 255, 255, 0.75);
 }
 
-
-@keyframes animated-text-type{
-  from{width: 0;}
-  to{width: 155px;}
+@keyframes animated-text-type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 155px;
+  }
 }
 
-@keyframes animated-text-wipe{
-  from{width: 155px;}
-  to{width: 0;
+@keyframes animated-text-wipe {
+  from {
+    width: 155px;
+  }
+  to {
+    width: 0;
     display: none;
   }
 }
