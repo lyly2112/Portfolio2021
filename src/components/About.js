@@ -33,26 +33,6 @@ function About() {
     }
   }, [inView]);
 
-  // function animateStart() {
-  //   const element = document.querySelector(".about__icon-logo");
-  //   element.classList.add("animate__animated", "animate__heartBeat");
-  //   element.style.setProperty('--animate-duration', '0.5s');
-  //   element.addEventListener("animationend", () => {
-  //     // do something
-  //   });
-  //   return element;
-  // }
-
-  // function animateEnd() {
-  //   const element = document.querySelector(".about__icon-logo");
-  //   element.classList.add("animate__animated", "animate__heartBeat");
-
-  //   element.addEventListener("animationend", () => {
-  //     // do something
-  //   });
-  //   return element;
-  // }
-
   const animateCSS = (element, animation, prefix = 'animate__') =>
   // We create a Promise and return it
   new Promise((resolve, reject) => {
