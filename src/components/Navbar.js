@@ -1,8 +1,24 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { animateScroll as scroll } from "react-scroll";
+import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
 
 function Navbar() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    rootMargin: "-50px 0px",
+  });
+
+  useEffect(() => {
+    if (inView) {
+      console.log("inView:", inView);
+    } else {
+      console.log("inView:", inView);
+    }
+  }, [inView]);
+
+
   return (
     <div className="navbar">
       <div className="navbar__column--left">
