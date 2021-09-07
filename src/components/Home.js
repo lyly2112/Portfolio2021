@@ -11,7 +11,6 @@ function Home() {
       opacity: 0;
       transform: translateY(-75px);
     }
-
     50% {
         opacity: 1;
         transform: translate(0);
@@ -23,17 +22,14 @@ function Home() {
       width: 0;
       opacity: 0;
     }
-
     49% {
       width: 0;
       opacity: 0;
     }
-
     50% {
       opacity: 1;
       width: 1%;
     }
-
     100% {
       width: 100%;
       opacity: 1;
@@ -72,9 +68,8 @@ function Home() {
     opacity: 1;
     transform: translateY(0px);
   }
-
   50% {
-    opacity: 0.4;
+    opacity: 0.3;
     transform: translateY(-30px);
   }
 
@@ -86,6 +81,10 @@ function Home() {
   const ArrowAnimation = styled.div`
     animation: ${arrowAnimation} 3s linear infinite;
     animation-delay: 6s;
+    &:hover {
+      opacity:1;
+      
+    }
   `;
 
 
@@ -122,7 +121,7 @@ function Home() {
                 y1="100"
                 x2="100"
                 y2="100"
-                stroke="#60e5ec"
+                stroke="#FFF"
                 stroke-width="0.5rem"
               />
             </svg>
@@ -140,7 +139,7 @@ function Home() {
                 y1="0"
                 x2="100"
                 y2="0"
-                stroke="#60e5ec"
+                stroke="#FFF"
                 stroke-width="0.5rem"
               />
             </svg>
@@ -155,7 +154,7 @@ function Home() {
           <ArrowVisible div id="home__arrow">
             
             <ArrowAnimation className="home__arrow">
-            <img className="home__arrow-down" src={arrow} alt="see more" />
+            <img src={arrow} alt="see more" />
 </ArrowAnimation>
 
           </ArrowVisible>
