@@ -66,6 +66,9 @@ function About() {
           {/* </div>
           </div> */}
           <p className="about__bio">
+            responsive websites
+            testing background
+            
             I think of myself as an artist within the head of a mathematician.
             Or in other words, I am a forward-thinking and value-driven Software
             Developer with over a year of experience in software and web
