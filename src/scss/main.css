@@ -53,12 +53,16 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.navbar {
+.navbar-mobile {
+  display: none;
+}
+
+.navbar-desktop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
-  background-color: #72C9B9;
+  background-color: #72c9b9;
   height: 5rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -71,29 +75,101 @@ body {
   opacity: 0.85;
   padding: 15px 0;
 }
-.navbar__column--left {
+.navbar-desktop__column--left {
   display: flex;
   font-weight: 600;
 }
-.navbar__column--right {
+.navbar-desktop__column--right {
   display: flex;
 }
-.navbar__element {
+.navbar-desktop__element {
   float: left;
   display: flex;
   text-align: center;
   padding: 1rem;
   text-decoration: none;
 }
-.navbar__text:hover {
+.navbar-desktop__text:hover {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+  .navbar-desktop {
+    display: none;
+  }
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
 .home {
   display: flex;
   flex-direction: column;
   color: #fff;
-  background-color: #72C9B9;
+  background-color: #72c9b9;
   height: 100vh;
   width: 100%;
   align-items: center;
@@ -126,6 +202,21 @@ body {
 .home #home__arrow {
   position: absolute;
   bottom: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .home {
+    display: flex;
+    justify-content: center;
+  }
+  .home__header {
+    justify-content: center;
+  }
+  .home__header-name {
+    font-size: 1.5rem;
+  }
+  .home__header-title {
+    font-size: 1rem;
+  }
 }
 .about {
   display: flex;
