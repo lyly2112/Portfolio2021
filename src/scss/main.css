@@ -53,15 +53,14 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.navbar-mobile {
+.navbar-mobile-menu {
   display: none;
 }
 
-.navbar-desktop {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
   background-color: #72c9b9;
   height: 5rem;
   text-transform: uppercase;
@@ -75,27 +74,46 @@ body {
   opacity: 0.85;
   padding: 15px 0;
 }
-.navbar-desktop__column--left {
+.navbar-logo {
   display: flex;
   font-weight: 600;
-}
-.navbar-desktop__column--right {
-  display: flex;
-}
-.navbar-desktop__element {
-  float: left;
-  display: flex;
   text-align: center;
   padding: 1rem;
   text-decoration: none;
 }
-.navbar-desktop__text:hover {
+.navbar-logo:hover {
+  cursor: pointer;
+}
+.navbar-desktop-menu {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+.navbar-desktop-list {
+  list-style: none;
+}
+.navbar-desktop-element {
+  display: inline;
+  padding: 1rem;
+}
+.navbar-desktop-element:hover {
   cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
-  .navbar-desktop {
+  .navbar-desktop-menu {
     display: none;
+  }
+
+  #outer-container {
+    display: flex;
+    background-color: red;
+  }
+
+  .navbar-mobile {
+    display: flex;
   }
 
   /* Position and sizing of burger button */

@@ -1,11 +1,11 @@
-.navbar-mobile {
+.navbar-mobile-menu {
   display: none;
 }
-.navbar-desktop {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
+  // position: fixed;
   // top: 0;
   // width: 100%;
   background-color: #72c9b9;
@@ -26,32 +26,58 @@
   // border-radius: 25px;
   padding: 15px 0;
 
-  &__column--left {
+  &-logo {
     display: flex;
     font-weight: 600;
-  }
-
-  &__column--right {
-    display: flex;
-  }
-
-  &__element {
-    float: left;
-    display: flex;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
   }
 
-  &__text:hover {
+  &-logo:hover {
+    cursor: pointer;
+  }
+
+  &-desktop-menu {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &-desktop-list {
+    list-style: none;
+  }
+
+  &-desktop-element {
+    display: inline;
+    padding: 1rem;
+  }
+
+  &-desktop-element:hover {
     cursor: pointer;
   }
 }
 
+
 @media only screen and (max-width: 600px) {
 
-    .navbar-desktop {
+    .navbar-desktop-menu {
         display: none;
+    }
+    // .navbar-mobile-menu {
+    //   display: flex;
+    //   background-color: blue;
+    // }
+
+    #outer-container{
+      display: flex;
+      background-color: red;
+    }
+
+    .navbar-mobile {
+      display: flex;
     }
   /* Position and sizing of burger button */
 .bm-burger-button {
