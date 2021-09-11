@@ -67,7 +67,6 @@ body {
   letter-spacing: 3px;
   align-items: center;
   position: fixed;
-  top: 20px;
   z-index: 500;
   width: 100%;
   color: #fff;
@@ -437,10 +436,12 @@ body {
   color: #fff;
 }
 .footer__links {
+  list-style: none;
   display: flex;
   flex-direction: row;
 }
 .footer__icon {
+  display: inline;
   height: 2.5rem;
   width: 2.5rem;
   padding: 5px;
