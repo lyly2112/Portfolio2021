@@ -61,6 +61,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
   background-color: #72c9b9;
   height: 5rem;
   text-transform: uppercase;
@@ -71,7 +73,6 @@ body {
   width: 100%;
   color: #fff;
   opacity: 0.85;
-  padding: 15px 0;
 }
 .navbar-logo {
   display: flex;
@@ -106,9 +107,8 @@ body {
     display: none;
   }
 
-  #outer-container {
-    display: flex;
-    background-color: red;
+  .navbar-mobile-menu {
+    display: inline-block;
   }
 
   .navbar-mobile {
@@ -120,8 +120,8 @@ body {
     position: fixed;
     width: 36px;
     height: 30px;
-    right: 36px;
-    top: 36px;
+    right: 1rem;
+    top: 38px;
   }
 
   /* Color/shape of burger icon bars */
@@ -157,7 +157,7 @@ body {
   /* General sidebar styles */
   .bm-menu {
     background: #373a47;
-    padding: 2.5em 1.5em 0;
+    padding: 0em 1.5em 0;
     font-size: 1.15em;
   }
 

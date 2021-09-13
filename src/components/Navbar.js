@@ -4,6 +4,7 @@ import { animateScroll as scroll } from "react-scroll";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
 import { slide as Menu } from "react-burger-menu";
+import HamburgerMenu from "./HamburgerMenu";
 
 function Navbar() {
   // const { ref, inView } = useInView({
@@ -71,56 +72,19 @@ function Navbar() {
 
     // </div>
 
-    <div className="navbar">
-      <div className="navbar-logo" onClick={() => scroll.scrollToTop()}>
+    <header className="navbar">
+      <h2 className="navbar-logo" onClick={() => scroll.scrollToTop()}>
         Liliya Sherstobitova
-      </div>
-      <nav className="navbar-desktop-menu">
-        <ul className="navbar-desktop-list">
-          <li className="navbar-desktop-element">
-            <Link
-              to="about"
-              smooth={true}
-              duration={1000}
-              // className="navbar-desktop__text"
-            >
-              About
-            </Link>
-          </li>
-          <li className="navbar-desktop-element">
-            <Link
-              to="portfolio"
-              smooth={true}
-              duration={1000}
-              // className="navbar-desktop__text"
-            >
-              Portfolio
-            </Link>
-          </li>
-          <li className="navbar-desktop-element">
-            <Link
-              to="footer"
-              smooth={true}
-              duration={1000}
-              // className="navbar-desktop__text"
-            >
-              Links
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      </h2>
 
-      <div className="navbar-mobile-menu">
-        <div id="outer-container">
-          <Menu
-            className="navbar-mobile-menu"
-            pageWrapId={"navbar-mobile"}
+      {/* <Menu
+            //  className="navbar-mobile-menu"
+            // pageWrapId={"app"}
             right
-            width={280}
+            // width={200}
             isOpen={false}
           >
             <ul className="navbar-mobile" id="navbar-mobile">
-              {/* <div className="navbar-mobile__column--right"> */}
               <li className="navbar-mobile-element">
                 <Link to="about" smooth={true} duration={1000}>
                   About
@@ -137,16 +101,48 @@ function Navbar() {
                 </Link>
               </li>
             </ul>
-            {/* </div> */}
+                
+          </Menu> */}
 
-            {/* <a id="home" className="menu-item" href="/">Home</a>
-    <a id="about" className="menu-item" href="/about">About</a> */}
+      <div className="menu">
+        <HamburgerMenu />
 
-            {/* <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a> */}
-          </Menu>
-        </div>
+        <nav className="navbar-desktop-menu">
+          <ul className="navbar-desktop-list">
+            <li className="navbar-desktop-element">
+              <Link
+                to="about"
+                smooth={true}
+                duration={1000}
+                // className="navbar-desktop__text"
+              >
+                About
+              </Link>
+            </li>
+            <li className="navbar-desktop-element">
+              <Link
+                to="portfolio"
+                smooth={true}
+                duration={1000}
+                // className="navbar-desktop__text"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li className="navbar-desktop-element">
+              <Link
+                to="footer"
+                smooth={true}
+                duration={1000}
+                // className="navbar-desktop__text"
+              >
+                Links
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 }
 
