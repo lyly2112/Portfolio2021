@@ -55,7 +55,12 @@
     padding: 1rem;
   }
 
-  &-desktop-element:hover {
+  // &-desktop-element:hover {
+  //   cursor: pointer;
+  // }
+
+
+  &-desktop-element__text:hover {
     cursor: pointer;
   }
 }

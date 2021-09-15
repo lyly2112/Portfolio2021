@@ -114,7 +114,7 @@ function Navbar() {
                 to="about"
                 smooth={true}
                 duration={1000}
-                // className="navbar-desktop__text"
+                className="navbar-desktop-element__text"
               >
                 About
               </Link>
@@ -124,7 +124,7 @@ function Navbar() {
                 to="portfolio"
                 smooth={true}
                 duration={1000}
-                // className="navbar-desktop__text"
+                className="navbar-desktop-element__text"
               >
                 Portfolio
               </Link>
@@ -134,7 +134,7 @@ function Navbar() {
                 to="footer"
                 smooth={true}
                 duration={1000}
-                // className="navbar-desktop__text"
+                className="navbar-desktop-element__text"
               >
                 Links
               </Link>

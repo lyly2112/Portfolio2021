@@ -98,7 +98,7 @@ body {
   display: inline;
   padding: 1rem;
 }
-.navbar-desktop-element:hover {
+.navbar-desktop-element__text:hover {
   cursor: pointer;
 }
 
@@ -113,6 +113,10 @@ body {
 
   .navbar-mobile {
     display: flex;
+  }
+
+  .navbar-mobile-element__text:hover {
+    cursor: pointer;
   }
 
   /* Position and sizing of burger button */
@@ -152,6 +156,7 @@ body {
   .bm-menu-wrap {
     position: fixed;
     height: 100%;
+    top: 0px;
   }
 
   /* General sidebar styles */

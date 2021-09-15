@@ -14,17 +14,32 @@ function HamburgerMenu() {
       <ul className="navbar-mobile" id="navbar-mobile">
         {/* <div className="navbar-mobile__column--right"> */}
         <li className="navbar-mobile-element">
-          <Link to="about" smooth={true} duration={1000}>
+          <Link
+            className="navbar-mobile-element__text"
+            to="about"
+            smooth={true}
+            duration={1000}
+          >
             About
           </Link>
         </li>
         <li className="navbar-mobile-element">
-          <Link to="portfolio" smooth={true} duration={1000}>
+          <Link
+            className="navbar-mobile-element__text"
+            to="portfolio"
+            smooth={true}
+            duration={1000}
+          >
             Portfolio
           </Link>
         </li>
         <li className="navbar-mobile-element">
-          <Link to="footer" smooth={true} duration={1000}>
+          <Link
+            className="navbar-mobile-element__text"
+            to="footer"
+            smooth={true}
+            duration={1000}
+          >
             Links
           </Link>
         </li>

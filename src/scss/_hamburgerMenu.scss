@@ -11,6 +11,12 @@
     .navbar-mobile {
       display: flex;
     }
+
+    .navbar-mobile-element__text:hover {
+cursor: pointer;
+    }
+    
+
   /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -48,6 +54,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
+  top: 0px;
 }
 
 /* General sidebar styles */
