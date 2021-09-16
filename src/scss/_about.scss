@@ -26,7 +26,6 @@
     // align-items: center;
     font-size: 1.4rem;
     // text-align: center;
-
   }
 
   // &__header-container {
@@ -153,4 +152,17 @@
     width: 0;
     display: none;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-animation-type {
+    font-size: 1rem;
+  }
+
+  .about__header {
+    font-size: 1rem;
+  }
+
+  .about__icons {
+flex-direction: column;  }
 }
