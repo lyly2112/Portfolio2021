@@ -59,7 +59,7 @@
   .home {
 display: flex;
 justify-content: center;
-  
+  z-index: 0;
 
   &__header {
     justify-content: center;
