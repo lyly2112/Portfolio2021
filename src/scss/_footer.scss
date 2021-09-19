@@ -7,30 +7,39 @@
   // background-color: #9fb1c4;
   background-color: #87d1c2;
   color: #fff;
-
+  width: 100%;
 
   &__links {
+    list-style: none;
     display: flex;
     flex-direction: row;
   }
 
   &__icon {
+    display: inline-block;
     height: 2.5rem;
     width: 2.5rem;
     padding: 5px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 0px solid #fff;
     margin: 0 0.5rem;
+    background-color: #fff;
   }
 
   &__icon:hover {
     filter: 
     // invert(1);
-opacity(50%)    
+      opacity(50%);
   }
 
   &__copyright {
     letter-spacing: 2px;
     padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 2rem 0   ;
   }
 }
