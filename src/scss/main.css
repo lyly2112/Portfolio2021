@@ -65,6 +65,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   align-items: center;
+  z-index: 1;
   color: #fff;
   opacity: 0.85;
 }
@@ -114,20 +115,19 @@ body {
 
   .navbar-logo {
     font-size: 1rem;
-    padding: 0;
   }
 
-  .navbar button {
+  .navbar-mobile button {
     position: fixed;
-    right: 40px;
-    top: 40px;
+    right: 20px;
+    top: 20px;
     z-index: 10;
     cursor: pointer;
     border: none;
     background: transparent;
   }
 
-  .menuNav {
+  .navbar-side-panel {
     overflow-y: scroll;
     list-style: none;
     position: fixed;
@@ -138,25 +138,23 @@ body {
     height: 100vh;
     width: 0;
     overflow: hidden;
-    max-width: 290px;
+    max-width: 250px;
     z-index: 9;
+    padding-top: 7rem;
   }
 
-  .menuNav.showMenu {
+  .navbar-side-panel.showMenu {
     width: 100%;
   }
 
-  a {
+  .navbar-mobile-element {
     display: block;
     padding: 10px 40px;
     text-decoration: none;
     color: #3fffd2;
     text-transform: uppercase;
     font-weight: bold;
-  }
-
-  .menuNav li:first-child {
-    margin-top: 7rem;
+    cursor: pointer;
   }
 }
 .home {
@@ -390,7 +388,7 @@ body {
   justify-content: center;
   text-align: center;
   margin: 1rem 0;
-  color: #4C5D75;
+  color: #4c5d75;
 }
 .portfolio__project-header-links {
   display: flex;
@@ -407,7 +405,7 @@ body {
   text-align: center;
 }
 .portfolio__project-tool {
-  background-color: #87D1C3;
+  background-color: #87d1c3;
   color: white;
   border-radius: 160px;
   padding: 0 0.5rem;
@@ -418,6 +416,28 @@ body {
 @media only screen and (max-width: 600px) {
   .portfolio {
     flex-direction: column;
+    height: auto;
+  }
+  .portfolio__projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .portfolio__project {
+    width: 100%;
+    height: auto;
+  }
+  .portfolio__project-image {
+    height: 10rem;
+  }
+  .portfolio__project-header {
+    font-size: 1rem;
+  }
+  .portfolio__project-tool {
+    margin: 0.2rem;
   }
 }
 .footer {
@@ -428,6 +448,7 @@ body {
   align-items: center;
   background-color: #87d1c2;
   color: #fff;
+  width: 100%;
 }
 .footer__links {
   list-style: none;
@@ -435,13 +456,14 @@ body {
   flex-direction: row;
 }
 .footer__icon {
-  display: inline;
+  display: inline-block;
   height: 2.5rem;
   width: 2.5rem;
   padding: 5px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 0px solid #fff;
   margin: 0 0.5rem;
+  background-color: #fff;
 }
 .footer__icon:hover {
   filter: opacity(50%);
@@ -449,5 +471,11 @@ body {
 .footer__copyright {
   letter-spacing: 2px;
   padding: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 2rem 0;
+  }
 }
 /*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */
