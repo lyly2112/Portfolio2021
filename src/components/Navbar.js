@@ -64,11 +64,11 @@ function Navbar() {
             <MdClose style={{ color: "#fff", width: "40px", height: "40px" }} />
           ) : (
             <FiMenu
-              style={{ color: "#7b7b7b", width: "40px", height: "40px" }}
+              style={{ color: "#fff", width: "40px", height: "40px" }}
             />
           )}
         </button>
-        <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
+        <ul className={`navbar-side-panel ${navbarOpen ? " showMenu" : ""}`}>
           <li className="navbar-mobile-element">
             <Link
               to="about"
