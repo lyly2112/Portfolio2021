@@ -138,7 +138,7 @@ function Portfolio() {
               <div className="portfolio__project-tool">React</div>
               <div className="portfolio__project-tool">JS</div>
               <div className="portfolio__project-tool">Bootstrap</div>
-              <div className="portfolio__project-tool">Emailjs</div>
+              {/* <div className="portfolio__project-tool">Emailjs</div> */}
             </div>
           </div>
         </GlowIn>
