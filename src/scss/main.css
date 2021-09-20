@@ -334,6 +334,12 @@ body {
     font-size: 1rem;
   }
 
+  .about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 8rem 5rem;
+  }
+
   .about__header {
     font-size: 1rem;
   }
