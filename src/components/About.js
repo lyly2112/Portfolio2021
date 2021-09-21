@@ -85,6 +85,7 @@ function About() {
         <div className="about__skills">
           <div className="about__header">Skills</div>
           <div className="about__icons">
+            <div className="about__icons__row">
             <div className="about__icon">
               <img className="about__icon-logo react" src={react} alt="React" 
                               onMouseEnter={() => animateCSS('.react', 'rotateIn')}
@@ -105,6 +106,8 @@ function About() {
               />
               <div className="about__icon__name">Java</div>
             </div>
+            </div>
+            <div className="about__icons__row">
             <div className="about__icon">
               <img
                 className="about__icon-logo html"
@@ -128,6 +131,8 @@ function About() {
                />
               <div className="about__icon__name">Sass</div>
             </div>
+</div>
+<div className="about__icons__row">
             <div className="about__icon">
               <img className="about__icon-logo vs" src={vs} alt="VS Code" 
                onMouseEnter={() => animateCSS('.vs', 'heartBeat')}
@@ -149,6 +154,10 @@ function About() {
                />
               <div className="about__icon__name">Figma</div>
             </div>
+            </div>
+
+
+
           </div>
         </div>
       </div>
