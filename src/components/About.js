@@ -1,6 +1,4 @@
 import React from "react";
-import Reveal from "react-reveal/Reveal";
-
 import java from "../images/icons/java.svg";
 import js from "../images/icons/js.svg";
 import react from "../images/icons/react.svg";
@@ -10,13 +8,11 @@ import html from "../images/icons/html.svg";
 import sass from "../images/icons/sass.svg";
 import vs from "../images/icons/vs.svg";
 import figma from "../images/icons/figma.svg";
-import { Link } from "react-scroll";
-import styled, { keyframes } from "styled-components";
-import { animateScroll as scroll } from "react-scroll";
+import selenium from "../images/icons/selenium.svg";
+import wordpress from "../images/icons/wordpress.svg";
 import { useInView } from "react-intersection-observer";
 import "animate.css/animate.min.css";
-import ScrollAnimation from "react-animate-on-scroll";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import "animate.css";
 
 function About() {
@@ -34,12 +30,10 @@ function About() {
   }, [inView]);
 
   const animateCSS = (element, animation, prefix = "animate__") =>
-    // We create a Promise and return it
     new Promise((resolve, reject) => {
       const animationName = `${prefix}${animation}`;
       const node = document.querySelector(element);
       node.classList.add(`${prefix}animated`, animationName);
-      // When the animation ends, we clean the classes and resolve the Promise
       function handleAnimationEnd(event) {
         event.stopPropagation();
         node.classList.remove(`${prefix}animated`, animationName);
@@ -51,8 +45,6 @@ function About() {
   return (
     <div className="about" id="about">
       <div className="about__text">
-        {/* <div className="about__header-container">
-            <div className="about__header"> */}
         <h2
           ref={ref}
           className={`${
@@ -61,30 +53,15 @@ function About() {
         >
           About
         </h2>
-        {/* </div>
-          </div> */}
         <p className="about__bio">
-          responsive websites testing background I think of myself as an artist
-          within the head of a mathematician. Or in other words, I am a
-          forward-thinking and value-driven Software Developer with over a year
-          of experience in software and web development. I've built a strong
-          background in building, integrating and supporting complex web
-          applications as I had to work on tasks that were intended for a
-          senior-level developer. Dedicated to continuously learn latest
-          technology designs and patterns, adopting them to maximise development
-          efficiency and produce innovative solutions. I apply proven technical,
-          communication and problem-solving skills to achieve efficiency in
-          every project I work on.
+          Full Stack Enthusiast. Focused on creating responsive web apps using
+          JavaScript & React. Strong background in building beautiful WordPress
+          websites. Expertise in Test Automation via Selenium methodology.
+          Constant learner.
         </p>
       </div>
       <div className="about__skills">
-        {/* <h2
-            
-          >
-            Skills
-          </h2>           */}
         <ul className="about__icons">
-          {/* <div className="about__icons__row"> */}
           <li className="about__icon">
             <img
               className="about__icon-logo react"
@@ -115,8 +92,6 @@ function About() {
             />
             <div className="about__icon__name">Java</div>
           </li>
-          {/* </div>
-            <div className="about__icons__row"> */}
           <li className="about__icon">
             <img
               className="about__icon-logo html"
@@ -147,8 +122,6 @@ function About() {
             />
             <div className="about__icon__name">Sass</div>
           </li>
-          {/* </div>
-<div className="about__icons__row"> */}
           <li className="about__icon">
             <img
               className="about__icon-logo vs"
@@ -175,9 +148,26 @@ function About() {
               src={figma}
               alt="Figma"
               onMouseEnter={() => animateCSS(".figma", "hinge")}
-              //  onMouseLeave={() => animateCSS('.figma', 'hinge')}
             />
             <div className="about__icon__name">Figma</div>
+          </li>
+          <li className="about__icon">
+            <img
+              className="about__icon-logo selenium"
+              src={selenium}
+              alt="Selenium"
+              onMouseEnter={() => animateCSS(".selenium", "rubberBand")}
+            />
+            <div className="about__icon__name">Selenium</div>
+          </li>
+          <li className="about__icon">
+            <img
+              className="about__icon-logo wordpress"
+              src={wordpress}
+              alt="Wordpress"
+              onMouseEnter={() => animateCSS(".wordpress", "rotateOut")}
+            />
+            <div className="about__icon__name">Wordpress</div>
           </li>
         </ul>
       </div>
