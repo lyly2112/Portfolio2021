@@ -179,9 +179,10 @@
     display: flex;
     flex-direction: column;
   }
-  .about__icons__row {
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: row;
+
+  .about__icon-logo {
+    width: 2.5rem;
+    height: 2.5rem;
   }
+
 }
