@@ -82,11 +82,9 @@ function Home() {
     animation: ${arrowAnimation} 3s linear infinite;
     animation-delay: 6s;
     &:hover {
-      opacity:1;
-      
+      opacity: 1;
     }
   `;
-
 
   const arrowVisible = keyframes`
   0% {
@@ -100,10 +98,8 @@ function Home() {
   }`;
 
   const ArrowVisible = styled.div`
-    animation: ${arrowVisible} 7s linear ;
-
+    animation: ${arrowVisible} 7s linear;
   `;
-
 
   return (
     <div className="home">
@@ -150,15 +146,11 @@ function Home() {
         </TitleAnimation>
       </div>
       <Link to="about" smooth={true} duration={1000} className="navbar__text">
-        
-          <ArrowVisible div id="home__arrow">
-            
-            <ArrowAnimation className="home__arrow">
+        <ArrowVisible div id="home__arrow">
+          <ArrowAnimation className="home__arrow">
             <img src={arrow} alt="see more" />
-</ArrowAnimation>
-
-          </ArrowVisible>
-        
+          </ArrowAnimation>
+        </ArrowVisible>
       </Link>
     </div>
   );
