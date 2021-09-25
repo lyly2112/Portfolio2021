@@ -39,7 +39,8 @@ function Portfolio() {
       >
         Portfolio
       </h2>
-      <div className="portfolio__projects">
+      <ul className="portfolio__projects">
+<li>
         <GlowIn className="portfolio__project">
           <ExternalLink href="https://dianawebb.us/">
             <img
@@ -74,6 +75,8 @@ function Portfolio() {
             </div>
           </div>
         </GlowIn>
+        </li>
+        <li>
         <GlowIn className="portfolio__project">
           <ExternalLink href="https://nikiforov.netlify.app/">
             <img
@@ -108,6 +111,8 @@ function Portfolio() {
             </div>
           </div>
         </GlowIn>
+        </li>
+        <li>
         <GlowIn className="portfolio__project">
           <ExternalLink href="https://majesticbay.netlify.app/">
             <img
@@ -142,7 +147,9 @@ function Portfolio() {
             </div>
           </div>
         </GlowIn>
-      </div>
+        </li>
+        </ul>
+
     </div>
   );
 }
