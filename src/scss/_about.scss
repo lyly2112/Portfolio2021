@@ -166,19 +166,19 @@
   // }
 
   .about {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 8rem 5rem;
+    padding: 1rem;
   }
 
   .about__header {
     font-size: 1rem;
   }
 
-  .about__icons {
-    display: flex;
-    flex-direction: column;
-  }
+  // .about__icons {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 
   .about__icon-logo {
     width: 2.5rem;
