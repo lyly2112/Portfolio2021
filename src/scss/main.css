@@ -155,7 +155,7 @@ body {
     list-style: none;
     position: fixed;
     top: 0;
-    background: darkcyan;
+    background: #7f8c8d;
     right: 0;
     bottom: 0;
     height: 100vh;
@@ -172,7 +172,7 @@ body {
     display: block;
     padding: 10px 40px;
     text-decoration: none;
-    color: #3fffd2;
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
@@ -273,13 +273,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 8rem 0;
   max-width: 800px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 12.5rem;
   background: #fff;
   color: #7f8c8d;
@@ -298,14 +293,15 @@ body {
 }
 
 .about__header {
-  font-size: 2.5rem;
-  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 2rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
 }
 
 .about__skills {
@@ -440,9 +436,6 @@ body {
     margin: 0 auto;
     padding: 1rem;
   }
-  .about__header {
-    font-size: 1rem;
-  }
   .about__icon-logo {
     width: 2.5rem;
     height: 2.5rem;
@@ -457,7 +450,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 8rem 0;
+  padding: 0 0 8rem 0;
   background: #fff;
   color: #7f8c8d;
   max-width: 800px;
@@ -575,7 +568,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: auto;
     max-width: 100%;
     padding: 1rem;
   }
@@ -590,10 +582,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
   }
   .portfolio__project {
     width: auto;
