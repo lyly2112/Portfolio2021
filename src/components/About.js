@@ -45,6 +45,7 @@ function About() {
   return (
     <div className="about" id="about">
       <div className="about__text">
+        <div className="about__header-wrap">
         <h2
           ref={ref}
           className={`${
@@ -53,6 +54,7 @@ function About() {
         >
           About
         </h2>
+        </div>
         <p className="about__bio">
           Full Stack Enthusiast. Focused on creating responsive web apps using
           JavaScript & React. Strong background in building beautiful WordPress
