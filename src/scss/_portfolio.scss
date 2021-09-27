@@ -88,7 +88,8 @@
   .portfolio {
     flex-direction: column;
     height: auto;
-width: 100%;
+max-width: 100%;
+padding: 1rem;
 
     &__projects {
       display: flex;
@@ -96,13 +97,14 @@ width: 100%;
       justify-content: center;
       align-items: center;
       height: auto;
-      padding: 1rem;
+      // padding: 1rem;
 
     }
 
     &__project {
       width: auto;
       height: auto;
+      // max-width: 90%;
       // height: 15rem;
     }
 
