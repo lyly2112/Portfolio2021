@@ -61,6 +61,7 @@ function About() {
         </p>
       </div>
       <div className="about__skills">
+        <h2 className="about__header">Tools</h2>
         <ul className="about__icons">
           <li className="about__icon">
             <img
