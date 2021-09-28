@@ -107,18 +107,44 @@
   // animation: type 2s linear forwards;
   //   white-space: nowrap;
   // overflow: hidden;
+
+
+
+  // font-size: 2rem;
+  // letter-spacing: 3px;
+  // text-transform: uppercase;
+  // font-weight: 700;
+  // white-space: nowrap;
+  // overflow: hidden;
+  // display: inline-block;
+  // animation: animated-text-type 1s linear 1 normal both;
+  // // border-right: solid 5px rgba(255, 255, 255, 0.75);
+  // // border-left: solid 5px rgba(255, 255, 255, 0.75);
+  // margin-right: auto;
+
+  // margin: 0 ;
+
+
   font-size: 2rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
-  white-space: nowrap;
   overflow: hidden;
-  display: inline-block;
-  animation: animated-text-type 1s linear 1 normal both;
-  // border-right: solid 5px rgba(255, 255, 255, 0.75);
-  // border-left: solid 5px rgba(255, 255, 255, 0.75);
+  /* Ensures the content is not revealed until the animation */
+  // border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0;
+  margin-right: auto;
+  /* Gives that scrolling effect as the typing happens */
+  // letter-spacing: .15em;
+  /* Adjust as needed */
+  // animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 
-  // margin: 0 auto;
+  animation: type 1s linear 1 normal both;
+  // animation: animated-text-type 1s linear 1 normal both;
+
 }
 
 .header-animation-wipe {
@@ -126,35 +152,60 @@
   // margin: 2rem;
   // text-align: center;
   // font-size: 620%;
+  // font-size: 2rem;
+  // letter-spacing: 3px;
+  // text-transform: uppercase;
+  // font-weight: 700;
+  // white-space: nowrap;
+  // overflow: hidden;
+  // // border-right: solid 3px black;
+  // display: inline-block;
+  // animation: animated-text-wipe 1s linear 1 normal both;
+  // border-right: solid 5px rgba(255, 255, 255, 0.75);
+
+
+  
   font-size: 2rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
-  white-space: nowrap;
   overflow: hidden;
-  // border-right: solid 3px black;
-  display: inline-block;
-  animation: animated-text-wipe 1s linear 1 normal both;
-  border-right: solid 5px rgba(255, 255, 255, 0.75);
+  /* Ensures the content is not revealed until the animation */
+  // border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0;
+  margin-right: auto;
+  /* Gives that scrolling effect as the typing happens */
+  // letter-spacing: .15em;
+  /* Adjust as needed */
+  // animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+
+  animation: wipe 1s linear 1 normal both;
+  // animation: animated-text-type 1s linear 1 normal both;
+
 }
 
-@keyframes animated-text-type {
+
+@keyframes type {
   from {
     width: 0;
-    display: none;
+    // display: none;
+
   }
   to {
-    width: 125px;
+    width: 100%
   }
 }
 
-@keyframes animated-text-wipe {
+@keyframes wipe {
   from {
-    width: 200px;
+    width: 100%;
   }
   to {
     width: 0;
-    display: none;
+    // display: none;
   }
 }
 
