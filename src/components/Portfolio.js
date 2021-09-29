@@ -31,125 +31,128 @@ function Portfolio() {
 
   return (
     <div className="portfolio">
-      <h2
-        ref={ref}
-        className={`${
-          inView ? "header-animation-type" : "header-animation-wipe"
-        }`}
-      >
-        Portfolio
-      </h2>
+      <div className="portfolio__header-wrap">
+        <h2
+          ref={ref}
+          className={`${
+            inView ? "header-animation-type" : "header-animation-wipe"
+          }`}
+        >
+          Portfolio
+        </h2>
+      </div>
       <ul className="portfolio__projects">
-<li>
-        <GlowIn className="portfolio__project">
-          <ExternalLink href="https://dianawebb.us/">
-            <img
-              className="portfolio__project-image"
-              src={dianawebb}
-              alt="https://dianawebb.us/"
-            />
-          </ExternalLink>
-          <div className="portfolio__project-header">
-            <h3 className="portfolio__project-header-text">Diana Webb</h3>
-            <div className="portfolio__project-header-links">
-              <ExternalLink href="https://dianawebb.us/">
-                <img
-                  className="portfolio__project-header-icon"
-                  src={globe}
-                  alt="https://dianawebb.us/"
-                />
-              </ExternalLink>
-              <ExternalLink href="https://github.com/MajesticBay/diana-webb">
-                <img
-                  className="portfolio__project-header-icon"
-                  src={git}
-                  alt="https://github.com/MajesticBay/diana-webb"
-                />
-              </ExternalLink>
+        <li>
+          <GlowIn className="portfolio__project">
+            <ExternalLink href="https://dianawebb.us/">
+              <img
+                className="portfolio__project-image"
+                src={dianawebb}
+                alt="https://dianawebb.us/"
+              />
+            </ExternalLink>
+            <div className="portfolio__project-header">
+              <h3 className="portfolio__project-header-text">Diana Webb</h3>
+              <div className="portfolio__project-header-links">
+                <ExternalLink href="https://dianawebb.us/">
+                  <img
+                    className="portfolio__project-header-icon"
+                    src={globe}
+                    alt="https://dianawebb.us/"
+                  />
+                </ExternalLink>
+                <ExternalLink href="https://github.com/MajesticBay/diana-webb">
+                  <img
+                    className="portfolio__project-header-icon"
+                    src={git}
+                    alt="https://github.com/MajesticBay/diana-webb"
+                  />
+                </ExternalLink>
+              </div>
+              <div className="portfolio__project-tools">
+                <div className="portfolio__project-tool">React</div>
+                <div className="portfolio__project-tool">JS</div>
+                <div className="portfolio__project-tool">Sass</div>
+                <div className="portfolio__project-tool">Gatsby</div>
+              </div>
             </div>
-            <div className="portfolio__project-tools">
-              <div className="portfolio__project-tool">React</div>
-              <div className="portfolio__project-tool">JS</div>
-              <div className="portfolio__project-tool">Sass</div>
-              <div className="portfolio__project-tool">Gatsby</div>
-            </div>
-          </div>
-        </GlowIn>
+          </GlowIn>
         </li>
         <li>
-        <GlowIn className="portfolio__project">
-          <ExternalLink href="https://nikiforov.netlify.app/">
-            <img
-              className="portfolio__project-image"
-              src={sergeinikiforov}
-              alt="https://nikiforov.netlify.app/"
-            />
-          </ExternalLink>
-          <div className="portfolio__project-header">
-            <h3 className="portfolio__project-header-text">Sergei Nikiforov</h3>
-            <div className="portfolio__project-header-links">
-              <ExternalLink href="https://nikiforov.netlify.app/">
-                <img
-                  className="portfolio__project-header-icon"
-                  src={globe}
-                  alt="https://nikiforov.netlify.app/"
-                />
-              </ExternalLink>
-              <ExternalLink href="https://github.com/lyly2112/nikiforov">
-                <img
-                  className="portfolio__project-header-icon"
-                  src={git}
-                  alt="https://github.com/lyly2112/nikiforov"
-                />
-              </ExternalLink>
+          <GlowIn className="portfolio__project">
+            <ExternalLink href="https://nikiforov.netlify.app/">
+              <img
+                className="portfolio__project-image"
+                src={sergeinikiforov}
+                alt="https://nikiforov.netlify.app/"
+              />
+            </ExternalLink>
+            <div className="portfolio__project-header">
+              <h3 className="portfolio__project-header-text">
+                Sergei Nikiforov
+              </h3>
+              <div className="portfolio__project-header-links">
+                <ExternalLink href="https://nikiforov.netlify.app/">
+                  <img
+                    className="portfolio__project-header-icon"
+                    src={globe}
+                    alt="https://nikiforov.netlify.app/"
+                  />
+                </ExternalLink>
+                <ExternalLink href="https://github.com/lyly2112/nikiforov">
+                  <img
+                    className="portfolio__project-header-icon"
+                    src={git}
+                    alt="https://github.com/lyly2112/nikiforov"
+                  />
+                </ExternalLink>
+              </div>
+              <div className="portfolio__project-tools">
+                <div className="portfolio__project-tool">React</div>
+                <div className="portfolio__project-tool">JS</div>
+                <div className="portfolio__project-tool">Sass</div>
+                <div className="portfolio__project-tool">Emailjs</div>
+              </div>
             </div>
-            <div className="portfolio__project-tools">
-              <div className="portfolio__project-tool">React</div>
-              <div className="portfolio__project-tool">JS</div>
-              <div className="portfolio__project-tool">Sass</div>
-              <div className="portfolio__project-tool">Emailjs</div>
-            </div>
-          </div>
-        </GlowIn>
+          </GlowIn>
         </li>
         <li>
-        <GlowIn className="portfolio__project">
-          <ExternalLink href="https://majesticbay.netlify.app/">
-            <img
-              className="portfolio__project-image"
-              src={majesticbay}
-              alt="https://majesticbay.netlify.app/"
-            />
-          </ExternalLink>
-          <div className="portfolio__project-header">
-            <h3 className="portfolio__project-header-text">Majestic Bay</h3>
-            <div className="portfolio__project-header-links">
-              <ExternalLink href="https://majesticbay.netlify.app/">
-                <img
-                  className="portfolio__project-header-icon"
-                  src={globe}
-                  alt="https://majesticbay.netlify.app/"
-                />
-              </ExternalLink>
-              <ExternalLink href="https://github.com/lyly2112/MajesticBay">
-                <img
-                  className="portfolio__project-header-icon"
-                  src={git}
-                  alt="https://github.com/lyly2112/MajesticBay"
-                />
-              </ExternalLink>
+          <GlowIn className="portfolio__project">
+            <ExternalLink href="https://majesticbay.netlify.app/">
+              <img
+                className="portfolio__project-image"
+                src={majesticbay}
+                alt="https://majesticbay.netlify.app/"
+              />
+            </ExternalLink>
+            <div className="portfolio__project-header">
+              <h3 className="portfolio__project-header-text">Majestic Bay</h3>
+              <div className="portfolio__project-header-links">
+                <ExternalLink href="https://majesticbay.netlify.app/">
+                  <img
+                    className="portfolio__project-header-icon"
+                    src={globe}
+                    alt="https://majesticbay.netlify.app/"
+                  />
+                </ExternalLink>
+                <ExternalLink href="https://github.com/lyly2112/MajesticBay">
+                  <img
+                    className="portfolio__project-header-icon"
+                    src={git}
+                    alt="https://github.com/lyly2112/MajesticBay"
+                  />
+                </ExternalLink>
+              </div>
+              <div className="portfolio__project-tools">
+                <div className="portfolio__project-tool">React</div>
+                <div className="portfolio__project-tool">JS</div>
+                <div className="portfolio__project-tool">Bootstrap</div>
+                {/* <div className="portfolio__project-tool">Emailjs</div> */}
+              </div>
             </div>
-            <div className="portfolio__project-tools">
-              <div className="portfolio__project-tool">React</div>
-              <div className="portfolio__project-tool">JS</div>
-              <div className="portfolio__project-tool">Bootstrap</div>
-              {/* <div className="portfolio__project-tool">Emailjs</div> */}
-            </div>
-          </div>
-        </GlowIn>
+          </GlowIn>
         </li>
-        </ul>
-
+      </ul>
     </div>
   );
 }
