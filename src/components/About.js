@@ -71,7 +71,7 @@ function About() {
               src={react}
               alt="React"
               onMouseEnter={() => animateCSS(".react", "rotateIn")}
-              onMouseLeave={() => animateCSS(".react", "rotateIn")}
+              onMouseLeave={() => animateCSS(".react", "rotateOut")}
             />
             <div className="about__icon__name">React</div>
           </li>
@@ -151,6 +151,7 @@ function About() {
               src={figma}
               alt="Figma"
               onMouseEnter={() => animateCSS(".figma", "hinge")}
+              onMouseLeave={() => animateCSS(".figma", "hinge")}
             />
             <div className="about__icon__name">Figma</div>
           </li>
@@ -160,6 +161,7 @@ function About() {
               src={selenium}
               alt="Selenium"
               onMouseEnter={() => animateCSS(".selenium", "rubberBand")}
+              onMouseLeave={() => animateCSS(".selenium", "rubberBand")}
             />
             <div className="about__icon__name">Selenium</div>
           </li>
@@ -168,7 +170,8 @@ function About() {
               className="about__icon-logo wordpress"
               src={wordpress}
               alt="Wordpress"
-              onMouseEnter={() => animateCSS(".wordpress", "rotateOut")}
+              onMouseEnter={() => animateCSS(".wordpress", "rotateIn")}
+              onMouseLeave={() => animateCSS(".wordpress", "rotateOut")}
             />
             <div className="about__icon__name">Wordpress</div>
           </li>
