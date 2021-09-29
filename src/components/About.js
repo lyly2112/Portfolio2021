@@ -44,8 +44,7 @@ function About() {
 
   return (
     <div className="about" id="about">
-      <div className="about__text">
-        <div className="about__header-wrap">
+      <div className="about__header-wrap">
         <h2
           ref={ref}
           className={`${
@@ -54,16 +53,16 @@ function About() {
         >
           About
         </h2>
-        </div>
-        <p className="about__bio">
-          Full Stack Enthusiast. Focused on creating responsive web apps using
-          JavaScript & React. Strong background in building beautiful WordPress
-          websites. Expertise in Test Automation via Selenium methodology.
-          Constant learner.
-        </p>
       </div>
+
+      <p className="about__bio">
+        Full Stack Enthusiast. Focused on creating responsive web apps using
+        JavaScript & React. Strong background in building beautiful WordPress
+        websites. Expertise in Test Automation via Selenium methodology.
+        Constant learner.
+      </p>
       <div className="about__skills">
-        <h2 className="about__header">Tools</h2>
+        {/* <h2 className="about__header">Tools</h2> */}
         <ul className="about__icons">
           <li className="about__icon">
             <img
