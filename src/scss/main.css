@@ -275,27 +275,15 @@ body {
           flex-direction: column;
   padding: 8rem 0;
   max-width: 800px;
-  padding-top: 12.5rem;
   background: #fff;
   color: #7f8c8d;
   margin: 0 auto;
-}
-
-.about__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.4rem;
 }
 
 .about__header {
@@ -374,11 +362,17 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
-  white-space: nowrap;
   overflow: hidden;
-  display: inline-block;
-  -webkit-animation: animated-text-type 1s linear 1 normal both;
-          animation: animated-text-type 1s linear 1 normal both;
+  /* Ensures the content is not revealed until the animation */
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0;
+  margin-right: auto;
+  /* Gives that scrolling effect as the typing happens */
+  /* Adjust as needed */
+  -webkit-animation: type 1s linear 1 normal both;
+          animation: type 1s linear 1 normal both;
 }
 
 .header-animation-wipe {
@@ -386,51 +380,52 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
-  white-space: nowrap;
   overflow: hidden;
-  display: inline-block;
-  -webkit-animation: animated-text-wipe 1s linear 1 normal both;
-          animation: animated-text-wipe 1s linear 1 normal both;
-  border-right: solid 5px rgba(255, 255, 255, 0.75);
+  /* Ensures the content is not revealed until the animation */
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0;
+  margin-right: auto;
+  /* Gives that scrolling effect as the typing happens */
+  /* Adjust as needed */
+  -webkit-animation: wipe 1s linear 1 normal both;
+          animation: wipe 1s linear 1 normal both;
 }
 
-@-webkit-keyframes animated-text-type {
+@-webkit-keyframes type {
   from {
     width: 0;
-    display: none;
   }
   to {
-    width: 125px;
-  }
-}
-
-@keyframes animated-text-type {
-  from {
-    width: 0;
-    display: none;
-  }
-  to {
-    width: 125px;
+    width: 100%;
   }
 }
 
-@-webkit-keyframes animated-text-wipe {
+@keyframes type {
   from {
-    width: 200px;
+    width: 0;
   }
   to {
-    width: 0;
-    display: none;
+    width: 100%;
   }
 }
 
-@keyframes animated-text-wipe {
+@-webkit-keyframes wipe {
   from {
-    width: 200px;
+    width: 100%;
   }
   to {
     width: 0;
-    display: none;
+  }
+}
+
+@keyframes wipe {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
   }
 }
 
@@ -459,12 +454,21 @@ body {
   color: #7f8c8d;
   max-width: 800px;
   margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolio__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
   font-size: 2rem;
-  margin: 2rem;
-  text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
@@ -495,7 +499,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 15rem;
   height: 15rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 4px;
