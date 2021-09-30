@@ -22,6 +22,7 @@ time, mark, audio, video {
   font-size: 10px;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Nunito', sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -49,19 +50,6 @@ table {
   border-spacing: 0;
 }
 
-body {
-  font-family: 'Nunito', sans-serif;
-  margin: 0 auto;
-}
-
-.navbar-wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: auto;
-  width: 100%;
-}
-
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,6 +71,14 @@ body {
   z-index: 9;
   color: #fff;
   opacity: 0.85;
+}
+
+.navbar-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
 }
 
 .navbar-logo {
@@ -357,78 +353,6 @@ body {
   text-align: center;
 }
 
-.header-animation-type {
-  font-size: 2rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: 700;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0;
-  margin-right: auto;
-  /* Gives that scrolling effect as the typing happens */
-  /* Adjust as needed */
-  -webkit-animation: type 1s linear 1 normal both;
-          animation: type 1s linear 1 normal both;
-}
-
-.header-animation-wipe {
-  font-size: 2rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: 700;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0;
-  margin-right: auto;
-  /* Gives that scrolling effect as the typing happens */
-  /* Adjust as needed */
-  -webkit-animation: wipe 1s linear 1 normal both;
-          animation: wipe 1s linear 1 normal both;
-}
-
-@-webkit-keyframes type {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes type {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes wipe {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0;
-  }
-}
-
-@keyframes wipe {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .about {
     max-width: 100%;
@@ -656,5 +580,77 @@ body {
 .footer__copyright {
   letter-spacing: 2px;
   padding: 2rem;
+}
+
+.header-animation-type {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0;
+  margin-right: auto;
+  /* Gives that scrolling effect as the typing happens */
+  /* Adjust as needed */
+  -webkit-animation: type 1s linear 1 normal both;
+          animation: type 1s linear 1 normal both;
+}
+
+.header-animation-wipe {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0;
+  margin-right: auto;
+  /* Gives that scrolling effect as the typing happens */
+  /* Adjust as needed */
+  -webkit-animation: wipe 1s linear 1 normal both;
+          animation: wipe 1s linear 1 normal both;
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes wipe {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes wipe {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
