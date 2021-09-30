@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { ExternalLink } from "react-external-link";
 import dianawebb from "../images/portfolio/dianawebb.JPG";
 import sergeinikiforov from "../images/portfolio/sergeinikiforov.JPG";
 import majesticbay from "../images/portfolio/majesticbay.JPG";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
 import globe from "../images/icons/globe.svg";
 import git from "../images/icons/git.svg";
-// add "glow-out" animation
 
 function Portfolio() {
   const { ref, inView } = useInView({
@@ -147,7 +146,6 @@ function Portfolio() {
                 <div className="portfolio__project-tool">React</div>
                 <div className="portfolio__project-tool">JS</div>
                 <div className="portfolio__project-tool">Bootstrap</div>
-                {/* <div className="portfolio__project-tool">Emailjs</div> */}
               </div>
             </div>
           </GlowIn>

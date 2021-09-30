@@ -22,7 +22,6 @@ function Navbar() {
         <h2 className="navbar-logo" onClick={() => scroll.scrollToTop()}>
           Liliya Sherstobitova
         </h2>
-        {/* <div className="navbar-menu"> */}
         <nav className="navbar-desktop">
           <ul className="navbar-desktop-list">
             <li className="navbar-desktop-element">
@@ -57,7 +56,6 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-
         <nav className="navbar-mobile">
           <button onClick={handleToggle}>
             {navbarOpen ? (

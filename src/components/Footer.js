@@ -9,26 +9,17 @@ function Footer() {
     <nav className="footer">
       <ul className="footer__links">
         <li>
-          <ExternalLink
-            // className="footer__icon"
-            href="https://github.com/lyly2112"
-          >
+          <ExternalLink href="https://github.com/lyly2112">
             <img src={github} alt="github" className="footer__icon" />
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink
-            // className="footer__icon"
-            href="https://www.linkedin.com/in/liliya-sherstobitova-322a4b125/"
-          >
+          <ExternalLink href="https://www.linkedin.com/in/liliya-sherstobitova-322a4b125/">
             <img src={linkedin} alt="linkedin" className="footer__icon" />
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink
-            // className="footer__icon"
-            href="mailto: lyly2112@gmail.com"
-          >
+          <ExternalLink href="mailto: lyly2112@gmail.com">
             <img src={email} alt="email" className="footer__icon" />
           </ExternalLink>
         </li>

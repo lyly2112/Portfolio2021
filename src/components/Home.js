@@ -1,5 +1,4 @@
 import React from "react";
-//import Navbar from "./Navbar";
 import arrow from "../images/icons/down-arrow.svg";
 import styled, { keyframes } from "styled-components";
 import { animateScroll as scroll } from "react-scroll";

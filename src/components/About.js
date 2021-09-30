@@ -54,7 +54,6 @@ function About() {
           About
         </h2>
       </div>
-
       <p className="about__bio">
         Full Stack Enthusiast. Focused on creating responsive web apps using
         JavaScript & React. Strong background in building beautiful WordPress
