@@ -2,11 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 8rem 0;
-  // justify-content: center;
   max-width: 800px;
-  // align-items: center;
-  // padding-top: 12.5rem;
-  // margin-bottom: 12.5rem;
   background: #fff;
   color: #7f8c8d;
   margin: 0 auto;
@@ -23,13 +19,6 @@
     font-weight: 700;
   }
 
-  // &__bar {
-  //   width: 2px;
-  //   height: 2.5rem;
-  //   background: black;
-  //   position: relative;
-  // }
-
   &__skills {
     display: flex;
     flex-direction: column;
@@ -41,7 +30,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 75%;
-    margin: 0 auto
+    margin: 0 auto;
   }
 
   &__icon {
@@ -69,123 +58,6 @@
   }
 }
 
-.header-animation-type {
-  // align-items: flex-start;
-  // align-self: flex-start;
-  // font-size: 2.5rem;
-  // margin: 2rem ;
-  // text-align: center;
-  // font-size: 620%;
-  // display: flex;
-  // margin: 0 auto;
-  // justify-content: center;
-    // border-right: solid 3px black;
-  // animation: animated-text 4s linear 1s 1 normal both;
-  // animation: type 2s linear forwards;
-  //   white-space: nowrap;
-  // overflow: hidden;
-
-
-
-  // font-size: 2rem;
-  // letter-spacing: 3px;
-  // text-transform: uppercase;
-  // font-weight: 700;
-  // white-space: nowrap;
-  // overflow: hidden;
-  // display: inline-block;
-  // animation: animated-text-type 1s linear 1 normal both;
-  // // border-right: solid 5px rgba(255, 255, 255, 0.75);
-  // // border-left: solid 5px rgba(255, 255, 255, 0.75);
-  // margin-right: auto;
-
-  // margin: 0 ;
-
-
-  font-size: 2rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: 700;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  // border-right: .15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0;
-  margin-right: auto;
-  /* Gives that scrolling effect as the typing happens */
-  // letter-spacing: .15em;
-  /* Adjust as needed */
-  // animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
-
-  animation: type 1s linear 1 normal both;
-  // animation: animated-text-type 1s linear 1 normal both;
-
-}
-
-.header-animation-wipe {
-  // font-size: 2.5rem;
-  // margin: 2rem;
-  // text-align: center;
-  // font-size: 620%;
-  // font-size: 2rem;
-  // letter-spacing: 3px;
-  // text-transform: uppercase;
-  // font-weight: 700;
-  // white-space: nowrap;
-  // overflow: hidden;
-  // // border-right: solid 3px black;
-  // display: inline-block;
-  // animation: animated-text-wipe 1s linear 1 normal both;
-  // border-right: solid 5px rgba(255, 255, 255, 0.75);
-
-
-  
-  font-size: 2rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: 700;
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  // border-right: .15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0;
-  margin-right: auto;
-  /* Gives that scrolling effect as the typing happens */
-  // letter-spacing: .15em;
-  /* Adjust as needed */
-  // animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
-
-  animation: wipe 1s linear 1 normal both;
-  // animation: animated-text-type 1s linear 1 normal both;
-
-}
-
-
-@keyframes type {
-  from {
-    width: 0;
-    // display: none;
-
-  }
-  to {
-    width: 100%
-  }
-}
-
-@keyframes wipe {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0;
-    // display: none;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .about {
     max-width: 100%;
@@ -193,18 +65,8 @@
     padding: 5rem 1rem 0 1rem;
   }
 
-  // .about__header {
-  //   font-size: 1rem;
-  // }
-
-  // .about__icons {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
   .about__icon-logo {
     width: 2.5rem;
     height: 2.5rem;
   }
-
 }

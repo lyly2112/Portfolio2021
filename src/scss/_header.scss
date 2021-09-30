@@ -1,0 +1,55 @@
+.header-animation-type {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  // border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0;
+  margin-right: auto;
+  /* Gives that scrolling effect as the typing happens */
+  /* Adjust as needed */
+  // animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+  animation: type 1s linear 1 normal both;
+}
+
+.header-animation-wipe {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  // border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0;
+  margin-right: auto;
+  /* Gives that scrolling effect as the typing happens */
+  /* Adjust as needed */
+  // animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+  animation: wipe 1s linear 1 normal both;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes wipe {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
