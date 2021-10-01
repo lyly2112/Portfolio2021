@@ -1,7 +1,6 @@
 import React from "react";
 import arrow from "../images/icons/down-arrow.svg";
 import styled, { keyframes } from "styled-components";
-import { animateScroll as scroll } from "react-scroll";
 import { Link } from "react-scroll";
 
 function Home() {
@@ -117,7 +116,7 @@ function Home() {
                 x2="100"
                 y2="100"
                 stroke="#FFF"
-                stroke-width="0.5rem"
+                strokeWidth="0.5rem"
               />
             </svg>
           </Line>
@@ -135,7 +134,7 @@ function Home() {
                 x2="100"
                 y2="0"
                 stroke="#FFF"
-                stroke-width="0.5rem"
+                strokeWidth="0.5rem"
               />
             </svg>
           </Line>
