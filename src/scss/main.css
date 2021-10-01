@@ -227,16 +227,13 @@ table {
 
 .home__arrow {
   width: 3rem;
+  position: absolute;
+  bottom: 50px;
 }
 
 .home__arrow:hover {
   -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
           filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
-}
-
-.home #home__arrow {
-  position: absolute;
-  bottom: 50px;
 }
 @media only screen and (max-width: 600px) {
   .home {

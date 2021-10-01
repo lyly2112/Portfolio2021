@@ -144,9 +144,9 @@ function Home() {
           <h3 className="home__header-title">WEB developer</h3>
         </TitleAnimation>
       </div>
-      <Link to="about" smooth={true} duration={1000}>
-        <ArrowVisible div id="home__arrow">
-          <ArrowAnimation className="home__arrow">
+      <Link to="about" smooth={true} duration={1000} className="home__arrow">
+        <ArrowVisible >
+          <ArrowAnimation >
             <img src={arrow} alt="see more" />
           </ArrowAnimation>
         </ArrowVisible>
