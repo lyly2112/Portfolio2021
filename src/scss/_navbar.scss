@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #72c9b9;
+  background-color: #1d1045;
   height: 5rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -59,57 +59,62 @@
 
 @media only screen and (max-width: 600px) {
   .navbar {
-  
-  &-desktop {
-    display: none;
-  }
+    &-desktop {
+      display: none;
+    }
 
-  &-mobile {
-    display: flex;
-  }
+    &-mobile {
+      display: flex;
+    }
 
-  &-logo {
-    font-size: 1rem;
-  }
-  
-  &-mobile button {
-    position: fixed;
-    top: 20px;
-    right: 25px;
-    z-index: 10;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-  }
+    &-logo {
+      font-size: 1rem;
+    }
 
-  &-side-panel {
-    overflow-y: scroll;
-    list-style: none;
-    position: fixed;
-    top: 0;
-    background: #7f8c8d;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 0;
-    overflow: hidden;
-    max-width: 250px;
-    z-index: 9;
-    padding-top: 7rem;
-  }
+    &-mobile button {
+      position: fixed;
+      top: 20px;
+      right: 1rem;
+      z-index: 10;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+    }
 
-  &-side-panel.showMenu {
-    width: 100%;
-  }
+    &-side-panel {
+      overflow-y: scroll;
+      list-style: none;
+      position: fixed;
+      top: 0;
+      background: #e6839c;
+      right: 0;
+      bottom: 0;
+      height: 100vh;
+      width: 0;
+      overflow: hidden;
+      max-width: 250px;
+      z-index: 9;
+      padding-top: 7rem;
 
-  &-mobile-element {
-    display: block;
-    padding: 10px 40px;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-  }
 }
+    
+
+    &-side-panel.showMenu {
+      width: 100%;
+    }
+
+    &-mobile-element {
+      display: block;
+      padding: 10px 40px;
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    &-mobile-element:hover {
+      background: #1d1045;
+    }
+  }
 }
