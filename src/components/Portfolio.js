@@ -23,11 +23,11 @@ function Portfolio() {
   //   }
   // }, [inView]);
 
-  // const GlowIn = styled.div`
-  //   :hover {
-  //     box-shadow: 2px 2px 14px 1px rgb(240 162 158 / 100%);
-  //   }
-  // `;
+  const GlowIn = styled.div`
+    :hover {
+      box-shadow: 2px 2px 14px 1px rgb(240 162 158 / 100%);
+    }
+  `;
 
   return (
     <div className="portfolio">
