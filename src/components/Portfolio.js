@@ -53,7 +53,7 @@ function Portfolio() {
               />
             </ExternalLink>
             <div className="portfolio__project-header">
-              {/* <h3 className="portfolio__project-header-text">Diana Webb</h3> */}
+              <h3 className="portfolio__project-header-text">Diana Webb</h3>
               <div className="portfolio__project-header-links">
                 <ExternalLink href="https://dianawebb.us/">
                   <img
@@ -89,9 +89,9 @@ function Portfolio() {
               />
             </ExternalLink>
             <div className="portfolio__project-header">
-              {/* <h3 className="portfolio__project-header-text">
+              <h3 className="portfolio__project-header-text">
                 Sergei Nikiforov
-              </h3> */}
+              </h3>
               <div className="portfolio__project-header-links">
                 <ExternalLink href="https://nikiforov.netlify.app/">
                   <img
@@ -127,7 +127,7 @@ function Portfolio() {
               />
             </ExternalLink>
             <div className="portfolio__project-header">
-              {/* <h3 className="portfolio__project-header-text">Majestic Bay</h3> */}
+              <h3 className="portfolio__project-header-text">Majestic Bay</h3>
               <div className="portfolio__project-header-links">
                 <ExternalLink href="https://majesticbay.netlify.app/">
                   <img
