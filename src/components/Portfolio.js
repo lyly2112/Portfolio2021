@@ -10,36 +10,36 @@ import globe from "../images/icons/globe.svg";
 import git from "../images/icons/git.svg";
 
 function Portfolio() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-    rootMargin: "-50px 0px",
-  });
+  // const { ref, inView } = useInView({
+  //   threshold: 0.5,
+  //   rootMargin: "-50px 0px",
+  // });
 
-  useEffect(() => {
-    if (inView) {
-      console.log("inView:", inView);
-    } else {
-      console.log("inView:", inView);
-    }
-  }, [inView]);
+  // useEffect(() => {
+  //   if (inView) {
+  //     console.log("inView:", inView);
+  //   } else {
+  //     console.log("inView:", inView);
+  //   }
+  // }, [inView]);
 
-  const GlowIn = styled.div`
-    :hover {
-      box-shadow: 2px 2px 14px 1px rgb(240 162 158 / 100%);
-    }
-  `;
+  // const GlowIn = styled.div`
+  //   :hover {
+  //     box-shadow: 2px 2px 14px 1px rgb(240 162 158 / 100%);
+  //   }
+  // `;
 
   return (
     <div className="portfolio">
       <div className="portfolio__header-wrap">
-        <h2
+        {/* <h2
           ref={ref}
           className={`${
             inView ? "header-animation-type" : "header-animation-wipe"
           }`}
         >
           Portfolio
-        </h2>
+        </h2> */}
       </div>
       <ul className="portfolio__projects">
         <li>
