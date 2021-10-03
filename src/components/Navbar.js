@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { animateScroll as scroll } from "react-scroll";
+// import { animateScroll as scroll } from "react-scroll";
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";

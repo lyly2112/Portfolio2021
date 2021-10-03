@@ -1,26 +1,28 @@
-import React, { useEffect } from "react";
+import React from "react";
+// import useEffect from "react";
+
 import { ExternalLink } from "react-external-link";
 import dianawebb from "../images/portfolio/dianawebb.JPG";
 import sergeinikiforov from "../images/portfolio/sergeinikiforov.JPG";
 import majesticbay from "../images/portfolio/majesticbay.JPG";
 import styled from "styled-components";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import globe from "../images/icons/globe.svg";
 import git from "../images/icons/git.svg";
 
 function Portfolio() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-    rootMargin: "-50px 0px",
-  });
+  // const { ref, inView } = useInView({
+  //   threshold: 0.5,
+  //   rootMargin: "-50px 0px",
+  // });
 
-  useEffect(() => {
-    if (inView) {
-      console.log("inView:", inView);
-    } else {
-      console.log("inView:", inView);
-    }
-  }, [inView]);
+  // useEffect(() => {
+  //   if (inView) {
+  //     console.log("inView:", inView);
+  //   } else {
+  //     console.log("inView:", inView);
+  //   }
+  // }, [inView]);
 
   const GlowIn = styled.div`
     :hover {
