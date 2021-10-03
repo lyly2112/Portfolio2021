@@ -10,24 +10,24 @@ import vs from "../images/icons/vs.svg";
 import figma from "../images/icons/figma.svg";
 import selenium from "../images/icons/selenium.svg";
 import wordpress from "../images/icons/wordpress.svg";
-// import { useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import "animate.css/animate.min.css";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import "animate.css";
 
 function About() {
-  // const { ref, inView } = useInView({
-  //   threshold: 0.5,
-  //   rootMargin: "-50px 0px",
-  // });
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    rootMargin: "-50px 0px",
+  });
 
-  // useEffect(() => {
-  //   if (inView) {
-  //     console.log("inView:", inView);
-  //   } else {
-  //     console.log("inView:", inView);
-  //   }
-  // }, [inView]);
+  useEffect(() => {
+    if (inView) {
+      console.log("inView:", inView);
+    } else {
+      console.log("inView:", inView);
+    }
+  }, [inView]);
 
   const animateCSS = (element, animation, prefix = "animate__") =>
     new Promise((resolve, reject) => {
@@ -45,14 +45,14 @@ function About() {
   return (
     <div className="about" id="about">
       <div className="about__header-wrap">
-        {/* <h2
+        <h2
           ref={ref}
           className={`${
             inView ? "header-animation-type" : "header-animation-wipe"
           }`}
         >
           About
-        </h2> */}
+        </h2>
       </div>
       <p className="about__bio">
         Full Stack Enthusiast. Focused on creating responsive web apps using
