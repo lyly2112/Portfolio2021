@@ -115,7 +115,7 @@ function Home() {
                 y1="100"
                 x2="100"
                 y2="100"
-                stroke="#FFF"
+                stroke="#14b7be"
                 strokeWidth="0.5rem"
               />
             </svg>
@@ -133,7 +133,7 @@ function Home() {
                 y1="0"
                 x2="100"
                 y2="0"
-                stroke="#FFF"
+                stroke="#14b7be"
                 strokeWidth="0.5rem"
               />
             </svg>
