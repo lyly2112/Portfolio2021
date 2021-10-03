@@ -120,7 +120,7 @@ function Home() {
               />
             </svg>
           </Line>
-          {/* <h2 className="home__header-name">Liliya Sherstobitova</h2> */}
+          <h2 className="home__header-name">Liliya Sherstobitova</h2>
           <Line>
             <svg
               width="100%"
