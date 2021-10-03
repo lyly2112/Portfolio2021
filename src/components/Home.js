@@ -140,7 +140,7 @@ function Home() {
           </Line>
         </NameAnimation>
         <TitleAnimation>
-          {/* <h3 className="home__header-title">WEB developer</h3> */}
+          <h3 className="home__header-title">WEB developer</h3>
         </TitleAnimation>
       </div>
       <Link to="about" smooth={true} duration={1000} className="home__arrow">
