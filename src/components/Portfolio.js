@@ -24,7 +24,7 @@ function Portfolio() {
 
   const GlowIn = styled.div`
     :hover {
-      box-shadow: 2px 2px 14px 1px rgb(0 0 0 / 40%);
+      box-shadow: 2px 2px 14px 1px rgb(240 162 158 / 100%);
     }
   `;
 
