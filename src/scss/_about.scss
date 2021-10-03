@@ -2,12 +2,16 @@
   display: flex;
   flex-direction: column;
   padding: 8rem 0;
-  max-width: 800px;
-  background: #fff;
-  color: #7f8c8d;
+  background: #eeeeee;
+  color: #1f1346;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
+  &__header-wrap {
+    max-width: 800px;
+  }
 
   &__header {
     display: flex;
@@ -17,11 +21,13 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 700;
+    max-width: 800px;
   }
 
   &__skills {
     display: flex;
     flex-direction: column;
+    max-width: 800px;
   }
 
   &__icons {
@@ -55,6 +61,7 @@
 
   &__bio {
     text-align: center;
+    max-width: 800px;
   }
 }
 
@@ -62,7 +69,7 @@
   .about {
     max-width: 100%;
     margin: 0 auto;
-    padding: 5rem 1rem 0 1rem;
+    padding: 5rem 1rem;
   }
 
   .about__icon-logo {
