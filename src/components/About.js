@@ -45,14 +45,14 @@ function About() {
   return (
     <div className="about" id="about">
       <div className="about__header-wrap">
-        <h2
+        {/* <h2
           ref={ref}
           className={`${
             inView ? "header-animation-type" : "header-animation-wipe"
           }`}
         >
           About
-        </h2>
+        </h2> */}
       </div>
       <p className="about__bio">
         Full Stack Enthusiast. Focused on creating responsive web apps using
