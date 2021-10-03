@@ -61,7 +61,7 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #72c9b9;
+  background-color: #1d1045;
   height: 5rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -140,7 +140,7 @@ table {
   .navbar-mobile button {
     position: fixed;
     top: 20px;
-    right: 25px;
+    right: 1rem;
     z-index: 10;
     cursor: pointer;
     border: none;
@@ -151,7 +151,7 @@ table {
     list-style: none;
     position: fixed;
     top: 0;
-    background: #7f8c8d;
+    background: #e6839c;
     right: 0;
     bottom: 0;
     height: 100vh;
@@ -173,6 +173,9 @@ table {
     font-weight: bold;
     cursor: pointer;
   }
+  .navbar-mobile-element:hover {
+    background: #1d1045;
+  }
 }
 
 .home {
@@ -184,7 +187,6 @@ table {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #fff;
-  background-color: #72c9b9;
   height: 100vh;
   width: 100%;
   -webkit-box-align: center;
@@ -195,6 +197,9 @@ table {
           justify-content: center;
   text-transform: uppercase;
   letter-spacing: 3px;
+  background: #1e1146;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e1146), color-stop(50%, #1e1146), to(#14b7be));
+  background: linear-gradient(180deg, #1e1146 0%, #1e1146 50%, #14b7be 100%);
 }
 
 .home__header {
@@ -234,6 +239,7 @@ table {
 .home__arrow:hover {
   -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
           filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
   .home {
@@ -267,9 +273,8 @@ table {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 8rem 0;
-  max-width: 800px;
-  background: #fff;
-  color: #7f8c8d;
+  background: #eeeeee;
+  color: #1f1346;
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -277,6 +282,11 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+}
+
+.about__header-wrap {
+  max-width: 800px;
 }
 
 .about__header {
@@ -289,6 +299,7 @@ table {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
+  max-width: 800px;
 }
 
 .about__skills {
@@ -299,6 +310,7 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 800px;
 }
 
 .about__icons {
@@ -348,13 +360,14 @@ table {
 
 .about__bio {
   text-align: center;
+  max-width: 800px;
 }
 
 @media only screen and (max-width: 600px) {
   .about {
     max-width: 100%;
     margin: 0 auto;
-    padding: 5rem 1rem 0 1rem;
+    padding: 5rem 1rem;
   }
   .about__icon-logo {
     width: 2.5rem;
@@ -370,10 +383,9 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 0 8rem 0;
-  background: #fff;
-  color: #7f8c8d;
-  max-width: 800px;
+  padding: 8rem 0;
+  background: #e5e4e9;
+  color: #1f1346;
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -381,6 +393,11 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+}
+
+.portfolio__header-wrap {
+  max-width: 800px;
 }
 
 .portfolio__header {
@@ -410,6 +427,7 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 800px;
 }
 
 .portfolio__project {
@@ -447,7 +465,7 @@ table {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  color: #4c5d75;
+  color: #1f1346;
 }
 
 .portfolio__project-header-links {
@@ -482,7 +500,7 @@ table {
 }
 
 .portfolio__project-tool {
-  background-color: #87d1c3;
+  background-color: #14b7be;
   color: white;
   border-radius: 160px;
   padding: 0 0.5rem;
@@ -497,7 +515,7 @@ table {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 100%;
-    padding: 5rem 1rem 5rem 1rem;
+    padding: 5rem 1rem;
   }
   .portfolio__projects {
     display: -webkit-box;
@@ -542,7 +560,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #87d1c2;
+  background-color: #14b7be;
   color: #fff;
   width: 100%;
 }
