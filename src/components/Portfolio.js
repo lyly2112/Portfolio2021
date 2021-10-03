@@ -31,14 +31,14 @@ function Portfolio() {
   return (
     <div className="portfolio">
       <div className="portfolio__header-wrap">
-        <h2
+        {/* <h2
           ref={ref}
           className={`${
             inView ? "header-animation-type" : "header-animation-wipe"
           }`}
         >
           Portfolio
-        </h2>
+        </h2> */}
       </div>
       <ul className="portfolio__projects">
         <li>
