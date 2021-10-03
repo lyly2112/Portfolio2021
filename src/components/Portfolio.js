@@ -1,11 +1,11 @@
 import React from "react";
-import useEffect from "react";
+// import useEffect from "react";
 import { ExternalLink } from "react-external-link";
 import dianawebb from "../images/portfolio/dianawebb.JPG";
 import sergeinikiforov from "../images/portfolio/sergeinikiforov.JPG";
 import majesticbay from "../images/portfolio/majesticbay.JPG";
 import styled from "styled-components";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import globe from "../images/icons/globe.svg";
 import git from "../images/icons/git.svg";
 
