@@ -120,7 +120,7 @@ function Home() {
               />
             </svg>
           </Line>
-          <h2 className="home__header-name">Liliya Sherstobitova</h2>
+          {/* <h2 className="home__header-name">Liliya Sherstobitova</h2> */}
           <Line>
             <svg
               width="100%"
@@ -140,7 +140,7 @@ function Home() {
           </Line>
         </NameAnimation>
         <TitleAnimation>
-          <h3 className="home__header-title">WEB developer</h3>
+          {/* <h3 className="home__header-title">WEB developer</h3> */}
         </TitleAnimation>
       </div>
       <Link to="about" smooth={true} duration={1000} className="home__arrow">

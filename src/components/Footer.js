@@ -24,7 +24,7 @@ function Footer() {
           </ExternalLink>
         </li>
       </ul>
-      <h2 className="footer__copyright"> &copy; Liliya Sherstobitova</h2>
+      {/* <h2 className="footer__copyright"> &copy; Liliya Sherstobitova</h2> */}
     </nav>
   );
 }

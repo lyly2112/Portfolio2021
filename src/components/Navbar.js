@@ -19,9 +19,9 @@ function Navbar() {
   return (
     <div className="navbar-wrap">
       <header className="navbar">
-        <h2 className="navbar-logo" onClick={() => scroll.scrollToTop()}>
+        {/* <h2 className="navbar-logo" onClick={() => scroll.scrollToTop()}>
           Liliya Sherstobitova
-        </h2>
+        </h2> */}
         <nav className="navbar-desktop">
           <ul className="navbar-desktop-list">
             <li className="navbar-desktop-element">
