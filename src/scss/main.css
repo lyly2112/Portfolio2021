@@ -559,7 +559,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 4rem 0;
+  padding: 2rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -605,7 +605,7 @@ table {
 
 .footer__copyright {
   letter-spacing: 2px;
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
 .header-animation-type {
