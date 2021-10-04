@@ -14,16 +14,35 @@
     flex-direction: row;
   }
 
+  // &__icon {
+  //   display: inline-block;
+  //   height: 2.5rem;
+  //   width: 2.5rem;
+  //   padding: 5px;
+  //   border-radius: 50%;
+  //   border: 0px solid #fff;
+  //   margin: 0 0.5rem;
+  //   background-color: #fff;
+  // }
+
   &__icon {
-    display: inline-block;
-    height: 2.5rem;
-    width: 2.5rem;
-    padding: 5px;
-    border-radius: 50%;
-    border: 0px solid #fff;
-    margin: 0 0.5rem;
-    background-color: #fff;
+    width: 2rem;
+    height: auto;
+    display: block;
+    margin:auto;
   }
+
+&__icon-wrap {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+  display:flex;
+}
+
+
 
   &__icon:hover {
     filter: opacity(50%);
