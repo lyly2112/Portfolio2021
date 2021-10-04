@@ -163,6 +163,9 @@ table {
   }
   .navbar-side-panel.showMenu {
     width: 100%;
+    border-left: #14b7be;
+    border-width: 2px;
+    border-style: solid;
   }
   .navbar-mobile-element {
     display: block;
@@ -386,7 +389,7 @@ table {
   padding: 8rem 0;
   background: #e5e4e9;
   color: #1f1346;
-  margin: 0 auto;
+  margin: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -577,14 +580,22 @@ table {
 }
 
 .footer__icon {
-  display: inline-block;
-  height: 2.5rem;
-  width: 2.5rem;
-  padding: 5px;
+  width: 2rem;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.footer__icon-wrap {
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
-  border: 0px solid #fff;
-  margin: 0 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__icon:hover {
