@@ -95,12 +95,13 @@
       max-width: 250px;
       z-index: 9;
       padding-top: 7rem;
-
 }
-    
 
     &-side-panel.showMenu {
       width: 100%;
+      border-left: #14b7be;
+      border-width: 2px;
+      border-style: solid;
     }
 
     &-mobile-element {
