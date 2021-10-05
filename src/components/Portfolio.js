@@ -31,7 +31,7 @@ function Portfolio() {
 
   return (
     <div className="portfolio">
-      <div className="portfolio__header-wrap">
+      <span className="portfolio__header-wrap">
         <div
           ref={ref}
           className={`${
@@ -40,7 +40,7 @@ function Portfolio() {
         >
           Portfolio
         </div>
-      </div>
+      </span>
       <ul className="portfolio__projects">
         <li>
           <GlowIn className="portfolio__project">
