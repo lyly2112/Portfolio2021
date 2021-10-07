@@ -55,10 +55,10 @@ function About() {
         </h2>
       </div>
       <p className="about__bio">
-        Full Stack Enthusiast. Focused on creating responsive web apps using
-        JavaScript & React. Strong background in building beautiful WordPress
-        websites. Expertise in Test Automation via Selenium methodology.
-        Constant learner.
+        Hard-working web developer with a passion for creating responsive web
+        apps using JavaScript & React. Strong background in building elegant
+        WordPress websites. Expertise in Test Automation via Selenium
+        methodology. Constant learner of the web development trends.
       </p>
       <div className="about__skills">
         {/* <h2 className="about__header">Tools</h2> */}
