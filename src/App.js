@@ -1,14 +1,9 @@
 import React, { Component } from "react";
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import About from "./components/About"
-import Portfolio from "./components/Portfolio"
-import Footer from "./components/Footer"
-
-
-
-
-//import routes from './routes';
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
