@@ -95,15 +95,21 @@
       max-width: 250px;
       z-index: 9;
       padding-top: 7rem;
-}
-
-    &-side-panel.showMenu {
-      width: 100%;
       border-left: #14b7be;
       border-width: 2px;
       border-style: solid;
     }
 
+    &-side-panel.showMenu {
+      width: 100%;
+      transition: all 0.5s ease-in;
+    }
+
+    &-side-panel.hideMenu {
+      width: 0%;
+      transition: all 0.5s ease-in;
+    }
+    
     &-mobile-element {
       display: block;
       padding: 10px 40px;

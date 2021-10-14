@@ -68,7 +68,7 @@ function Navbar() {
               />
             )}
           </button>
-          <ul className={`navbar-side-panel ${navbarOpen ? " showMenu" : ""}`}>
+          <ul className={`navbar-side-panel ${navbarOpen ? " showMenu" : "hideMenu"}`}>
             <li className="navbar-mobile-element">
               <Link
                 to="about"
