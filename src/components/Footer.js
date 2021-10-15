@@ -14,7 +14,7 @@ function Footer() {
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink href="https://www.linkedin.com/in/liliya-sherstobitova-322a4b125/" className="footer__icon-wrap">
+          <ExternalLink href="https://www.linkedin.com/in/liliya-sherstobitova/" className="footer__icon-wrap">
             <img src={linkedin} alt="linkedin" className="footer__icon" />
           </ExternalLink>
         </li>
