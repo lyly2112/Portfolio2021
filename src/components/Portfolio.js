@@ -11,7 +11,7 @@ import git from "../images/icons/git.svg";
 
 function Portfolio() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0,
     rootMargin: "-50px 0px",
   });
 
